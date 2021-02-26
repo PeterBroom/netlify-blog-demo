@@ -35,7 +35,9 @@ collections:
           name: "permalink",
           widget: "relation",
           collection: "slug",
-          default: "{{slug}}",
+          search_fields: "slug",
+          value_field: "slug",
+          display_fields: "slug",
         }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
