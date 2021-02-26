@@ -33,11 +33,9 @@ collections:
       - {
           label: "Permalink",
           name: "permalink",
-          widget: "relation",
           collection: "slug",
-          search_fields: "slug",
-          value_field: "slug",
-          display_fields: "slug",
+          value_field: ["slug"],
+          search_fields: ["slug"],
         }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
