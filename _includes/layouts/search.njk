@@ -27,9 +27,12 @@ section: search
                     expand: true,
                     fields: {
                         title: {
-                            boost: 2
+                            boost: 3
                         },
                         metaKeywords: {
+                            boost: 2
+                        },
+                        metaDescription: {
                             boost: 1
                         }
                     }
