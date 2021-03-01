@@ -81,4 +81,20 @@
             </url>
         
     
+        
+            <url>
+                <loc>/otherway/one.html</loc>
+                <lastmod>2021-03-01T16:56:07.256Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>/otherway/two.html</loc>
+                <lastmod>2021-03-01T16:56:07.256Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
 </urlset>
