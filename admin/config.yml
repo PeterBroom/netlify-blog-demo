@@ -5,24 +5,6 @@ publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "src/posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "layouts/post.njk",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Date", name: "date", widget: "date", default: "" }
-      - { label: "Post Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image" }
-  # Our pages e.g. About
   - name: pages
     label: Pages
     label_singular: "Page"
