@@ -4,6 +4,13 @@ backend:
 media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 collections:
+  - name: presentations
+    fields:
+      - { label: Title, name: title, widget: string, tagname: "" }
+      - label: Body
+        name: body
+        widget: slides,
+        separator: "\n\n<!--s-->\n\n"
   - name: "posts"
     label: "Posts"
     folder: "posts"
