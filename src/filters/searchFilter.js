@@ -12,7 +12,6 @@ module.exports = function (collection) {
 
   // loop through each page and add it to the index
   collection.forEach((page) => {
-    console.log('data', page.template.frontMatter.data);
     index.addDoc({
       id: page.url,
       title: page.template.frontMatter.data.title,
