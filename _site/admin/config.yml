@@ -52,7 +52,7 @@ collections:
   # Our pages e.g. About
   - name: "pages"
     label: "Page"
-    folder: "src/pages"
+    folder: "src/pages/{{slug}}"
     create: true
     slug: "{{slug}}"
     fields:
