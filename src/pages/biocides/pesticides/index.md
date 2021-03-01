@@ -1,12 +1,13 @@
+
 ---
 layout: layouts/page.njk
-title: Serious testing
+title: pesticides
 date: 2021-03-01T16:56:07.256Z
-permalink: another/sub/serious-testing.html
+permalink: biocides/pesticides/index.html
 metaDescription: asdfadsfasdfasdfasfdasf
 metaKeywords: asdfafdsf
 eleventyNavigation:
   order: 0
-  key: Serious
+  key: pesticides
 ---
 asdfadsfasf
