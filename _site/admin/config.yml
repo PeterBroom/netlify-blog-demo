@@ -5,16 +5,16 @@ publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
-  - name: presentations
-    label: Presentation
-    folder: presentations
+  - name: "presentations"
+    label: "Presentation"
+    folder: "presentations"
     slug: "{{slug}}"
     create: true
     fields:
-      - { label: Title, name: title, widget: string, tagname: "" }
-      - label: Theme
-        name: theme
-        widget: select
+      - { label: "Title", name: "title", widget: "string", tagname: "" }
+      - label: "Theme"
+        name: "theme"
+        widget: "select"
         options:
           - beige
           - black
@@ -28,13 +28,13 @@ collections:
           - solarized
           - white
 
-      - label: Body
-        name: body
-        widget: slides
+      - label: "Body"
+        name: "body"
+        widget: "slides"
         separator: "\n\n<!--s-->\n\n"
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    folder: "src/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -52,10 +52,16 @@ collections:
   # Our pages e.g. About
   - name: "pages"
     label: "Page"
-    folder: "pages"
+    folder: "src/pages"
     create: true
     slug: "{{slug}}"
     fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/page.njk",
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }

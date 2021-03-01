@@ -1,0 +1,59 @@
+<html><head><title>Eleventy + Netlify CMS Blog Example</title></head><body><header><nav><ul><li><a href="/about/">About</a></li><li><a href="/sub/test.html">Test</a></li><li><a href="/">Home</a></li></ul></nav><h1>Eleventy + Netlify CMS Blog Example</h1></header><h1>Search</h1><div class="field"><label for="searchField">Search</label> <input type="search" placeholder="Search..." id="searchField"></div><ol id="searchResults"></ol><div id="noResultsFound" style="display: none"><p>No results found.</p></div><script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script><script>(function (window, document) {
+        "use strict";
+
+        const search = (e) => {
+            const results = window
+                .searchIndex
+                .search(e.target.value, {
+                    bool: "OR",
+                    expand: true,
+                    fields: {
+                        title: {
+                            boost: 3
+                        },
+                        metaKeywords: {
+                            boost: 2
+                        },
+                        metaDescription: {
+                            boost: 1
+                        }
+                    }
+                });
+
+            const resEl = document.getElementById("searchResults");
+            const noResultsEl = document.getElementById("noResultsFound");
+
+            resEl.innerHTML = "";
+            if (results) {
+                noResultsEl.style.display = "none";
+                results.map((r) => {
+                    const {id, title, description} = r.doc;
+                    const el = document.createElement("li");
+                    resEl.appendChild(el);
+
+                    const h3 = document.createElement("h3");
+                    el.appendChild(h3);
+
+                    const a = document.createElement("a");
+                    a.setAttribute("href", id);
+                    a.textContent = title;
+                    h3.appendChild(a);
+
+                    const p = document.createElement("p");
+                    p.textContent = description;
+                    el.appendChild(p);
+                });
+            } else {
+                noResultsEl.style.display = "block";
+            }
+        };
+
+        fetch("/search-index.json").then((response) => response.json().then((rawIndex) => {
+            window.searchIndex = elasticlunr
+                .Index
+                .load(rawIndex);
+            document
+                .getElementById("searchField")
+                .addEventListener("input", search);
+        }));
+    })(window, document);</script></body></html>

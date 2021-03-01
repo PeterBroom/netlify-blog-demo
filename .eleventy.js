@@ -24,6 +24,6 @@ module.exports = function (eleventyConfig) {
     // Search filter
     eleventyConfig.addFilter("search", searchFilter);
     eleventyConfig.addCollection("pages", collection => {
-        return [...collection.getFilteredByGlob("./pages/**/*.md")];
+        return [...collection.getFilteredByGlob("./src/pages/**/*.md")];
     });
 };
