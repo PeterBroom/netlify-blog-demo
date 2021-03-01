@@ -31,8 +31,18 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "metaDescription", name: "metaDescription", widget: "string" }
-      - { label: "metaKeywords", name: "metaKeywords", widget: "string" }
+      - {
+          label: "Meta description",
+          name: "metaDescription",
+          widget: "string",
+          pattern: [".{12,}", "Must have at least 12 characters"],
+        }
+      - {
+          label: "Meta keywords",
+          name: "metaKeywords",
+          widget: "string",
+          pattern: [".{3,}", "Must have at least 12 characters"],
+        }
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
