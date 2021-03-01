@@ -1,0 +1,5 @@
+{% for block in blocks %}
+    {% if block.type == 'hero' %}
+        {% include "components/hero.njk" %}
+    {% endif %}
+{% endfor %}

@@ -5,6 +5,26 @@ publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
+  - label: "Sitewide Options"
+    name: options
+    editor:
+      preview: false
+    files:
+      - label: "Navigation Menu"
+        name: nav
+        file: "_data/nav.yml"
+        fields:
+          - label: "Nav Items"
+            label_singular: "Nav Item"
+            name: topLevelItems
+            widget: list
+            fields:
+              - { label: "Display Text", name: displayText, widget: string }
+              - { label: URL, name: url, widget: string }
+              - label: "Item Type"
+                name: itemType
+                widget: select
+                options: ["Link", "Button"]
   - name: pages
     label: Pages
     label_singular: "Page"
@@ -15,6 +35,8 @@ collections:
       summary: "{{title}}"
     slug: "{{slug}}"
     preview_path: "{{permalink}}"
+    editor:
+      preview: false
     fields:
       - {
           label: "Layout",
@@ -25,25 +47,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - {
-          label: "Meta description",
-          name: "metaDescription",
-          widget: "string",
-          pattern: [".{12,}", "Must have at least 12 characters"],
-        }
-      - {
-          label: "Meta keywords",
-          name: "metaKeywords",
-          widget: "string",
-          pattern: [".{3,}", "Must have at least 12 characters"],
-        }
+
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-        name: "eleventyNavigation"
-        widget: "object"
-        fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Order", name: "order", widget: "number", default: 0 }
       - label: "Content Blocks"
         label_singular: "Content Block"
         name: blocks
@@ -72,4 +77,22 @@ collections:
                   required: false,
                 }
               - { label: "Content", name: content, widget: markdown }
+      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Order", name: "order", widget: "number", default: 0 }
+      - {
+          label: "Meta description",
+          name: "metaDescription",
+          widget: "string",
+          pattern: [".{12,}", "Must have at least 12 characters"],
+        }
+      - {
+          label: "Meta keywords",
+          name: "metaKeywords",
+          widget: "string",
+          pattern: [".{3,}", "Must have at least 12 characters"],
+        }
     meta: { path: { widget: string, label: "Path", index_file: "index" } }
