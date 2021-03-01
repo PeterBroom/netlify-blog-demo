@@ -25,8 +25,6 @@
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
     "elasticlunr": "^0.9.5",
-    "html-minifier": "^4.0.0",
-    "react": "^17.0.1",
-    "styled-components": "^5.2.1"
+    "html-minifier": "^4.0.0"
   }
 }
