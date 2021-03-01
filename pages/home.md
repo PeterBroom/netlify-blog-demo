@@ -19,20 +19,4 @@ For more info on installation and usage, view the \[project repo]({{ pkg.reposit
 
 Or click the button below to deploy your own copy of this project to Netlify.
 
-
-
-\---
-
-asdf
-
-\---
-
-asdfasdf
-
-\---
-
-asdfasdf
-
-\---
-
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
