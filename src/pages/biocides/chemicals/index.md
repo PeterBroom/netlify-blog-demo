@@ -8,5 +8,9 @@ metaKeywords: asdfafdsf
 eleventyNavigation:
   order: 0
   key: Checmicals
+blocks:
+  - type: hero
+    heading: My Hero
+    content: dsafkjsdafkjhadsfjhadsjfhadsjhfasdf
 ---
 asdfadsfasf
