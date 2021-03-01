@@ -2,7 +2,7 @@
 title: About us
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
-metaDescription: asdf
+metaDescription: Leverage agile frameworks to provide a robust synopsis for high level overviews
 metaKeywords: some, keywords, like, yes, yomo, health and safety
 eleventyNavigation:
   key: About
