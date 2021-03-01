@@ -50,10 +50,14 @@ collections:
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
   # Our pages e.g. About
-  - name: "pages"
-    label: "Page"
-    folder: "src/pages/{{slug}}"
+  - name: pages
+    label: Pages
+    label_singular: "Page"
+    folder: src/pages
     create: true
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: "{{title}}"
     slug: "{{slug}}"
     fields:
       - {
@@ -84,3 +88,4 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
+    meta: { path: { widget: string, label: "Path", index_file: "index" } }
