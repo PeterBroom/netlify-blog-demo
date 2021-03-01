@@ -3,9 +3,14 @@
         <title>Eleventy + Netlify CMS Blog Example</title>
     </head>
     <body>
-        <h1>
-            Eleventy + Netlify CMS Blog Example
-        </h1>
+        <header>
+            {# <em>
+                <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+            </em> #}
+            {% include "components/nav.njk" %}
+            <h1>Eleventy + Netlify CMS Blog Example</h1>
+        </header>
+
         {{ content | safe }}
     </body>
 </html>
