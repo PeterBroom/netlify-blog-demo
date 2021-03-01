@@ -27,14 +27,6 @@
     
         
             <url>
-                <loc>/posts/</loc>
-                <lastmod>2021-02-26T14:50:16.151Z</lastmod>
-                <changefreq>monthly</changefreq>
-            </url>
-        
-    
-        
-            <url>
                 <loc>/admin/</loc>
                 <lastmod>2021-02-26T15:01:43.492Z</lastmod>
                 <changefreq>monthly</changefreq>
@@ -84,6 +76,14 @@
         
             <url>
                 <loc>/another/serious-testing.html</loc>
+                <lastmod>2021-03-01T16:56:07.256Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>/another/sub/serious-testing.html</loc>
                 <lastmod>2021-03-01T16:56:07.256Z</lastmod>
                 <changefreq>monthly</changefreq>
             </url>
