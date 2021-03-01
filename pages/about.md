@@ -5,7 +5,7 @@ permalink: /about/index.html
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
-metaKeywords: some, keywords, like, yes, yomo
+metaKeywords: some, keywords, like, yes, yomo, health and safety
 eleventyNavigation:
   key: About
   order: 1
