@@ -4,7 +4,7 @@ title: Home
 date: 2016-01-01T00:00:00.000Z
 permalink: /
 metaDescription: This is a description for the homepage. Secret work is yoyo
-metaKeywords: yoyo, home, tickle, tummus, health and safely
+metaKeywords: yoyo, home, tickle, tummus, "health and safely"
 eleventyNavigation:
   key: Home
   order: 0
