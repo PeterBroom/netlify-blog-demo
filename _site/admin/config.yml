@@ -5,11 +5,31 @@ media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 collections:
   - name: presentations
+    label: Presentation
+    folder: presentations
+    slug: "{{slug}}"
+    create: true
     fields:
       - { label: Title, name: title, widget: string, tagname: "" }
+      - label: Theme
+        name: theme
+        widget: select
+        options:
+          - beige
+          - black
+          - blood
+          - league
+          - moon
+          - night
+          - serif
+          - simple
+          - sky
+          - solarized
+          - white
+
       - label: Body
         name: body
-        widget: slides,
+        widget: slides
         separator: "\n\n<!--s-->\n\n"
   - name: "posts"
     label: "Posts"
