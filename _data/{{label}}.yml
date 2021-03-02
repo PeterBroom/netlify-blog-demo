@@ -1,0 +1,5 @@
+navItems:
+  - displayText: test
+    url: /test
+  - displayText: test two
+    url: /test-two
