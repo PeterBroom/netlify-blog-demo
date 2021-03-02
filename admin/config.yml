@@ -43,11 +43,12 @@ collections:
   - name: pages
     label: Pages
     label_singular: "Page"
+    identifier_field: name
     folder: src/pages
     create: true
     nested:
       depth: 6 # max depth to show in the collection tree
-      summary: "{{title}}"
+      summary: "{{meta.path}}"
     slug: "{{slug}}"
     preview_path: "{{permalink}}"
     editor:

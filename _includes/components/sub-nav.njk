@@ -1,7 +1,12 @@
 <nav>
     {% set subNav = collections.all | eleventyNavigation %}
+
     <ul>
         {% for item in subNav %}
+            <pre>
+<code>
+    {{ item | dump }}
+</code></pre>
             <li>
                 <a href="{{ item.url | url }}"{% if item.url == page.url %} data-current="current item"{% endif %}>{{ item.title }}</a>
                 {% if item.children %}

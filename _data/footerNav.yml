@@ -1,7 +1,4 @@
 topLevelItems:
-  - displayText: Home
-    url: /
-    itemType: Link
-  - displayText: About us
-    url: /about/
+  - displayText: Search
+    url: /search/
     itemType: Link
