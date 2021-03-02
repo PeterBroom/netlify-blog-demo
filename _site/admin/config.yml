@@ -60,15 +60,15 @@ collections:
           widget: "hidden",
           default: "layouts/page.njk",
         }
-      - { label: "Title", name: "title", widget: "string", required: true }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - {
           label: "Permalink",
           name: "permalink",
           widget: "string",
           required: true,
+          valueField: "{{slug}}/index.html",
         }
-
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Content Blocks"
         label_singular: "Content Block"
