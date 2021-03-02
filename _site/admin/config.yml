@@ -48,18 +48,13 @@ collections:
             label_singular: "Nav Item"
             name: navItems
             widget: list
-            fields:
-              - {
-                  label: "Parent page",
-                  name: parent_relation,
-                  widget: relation,
-                  required: false,
-                  multiple: false,
-                  collection: pages,
-                  valueField: "{{slug}}",
-                  searchFields: ["title"],
-                  displayFields: ["title"],
-                }
+            types:
+              - label: "Sub Navigation"
+                name: subNav
+                widget: object
+                fields:
+                  - { label: "Display Text", name: displayText, widget: string }
+                  - { label: URL, name: url, widget: string }
 
   - name: pages
     label: Pages
