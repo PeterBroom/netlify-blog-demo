@@ -8,7 +8,6 @@ navItems:
           url: about
         - type: linkObject
           displayText: Pesticides
-          URL: biocides/pesticides/index
           url: biocides/pesticides/index
     navtitle: Biocides
     parent_relation: biocides/index
