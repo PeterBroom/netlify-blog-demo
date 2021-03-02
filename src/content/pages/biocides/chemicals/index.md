@@ -1,8 +1,8 @@
 ---
 layout: layouts/page.njk
+permalink: biocides/checmicals/index.html
 title: Checmicals
 date: 2021-03-01T16:56:07.256Z
-permalink: biocides/checmicals/index.html
 blocks:
   - type: hero
     heading: My Hero
@@ -10,7 +10,7 @@ blocks:
 eleventyNavigation:
   order: 0
   key: Checmicals
-  parent_relation: "biocides"
+  parent_relation: biocides/index
 metaDescription: asdfadsfasdfasdfasfdasf
 metaKeywords: asdfafdsf
 ---
