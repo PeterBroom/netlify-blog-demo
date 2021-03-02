@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-permalink: biocides/index.html
+permalink: biocides/
 title: Biocides
 date: 2021-03-01T16:51:59.942Z
 eleventyNavigation:
