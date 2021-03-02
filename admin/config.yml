@@ -56,13 +56,16 @@ collections:
                         name: link
                         widget: list
                         types:
-                          fields:
-                            - {
-                                label: "Display Text",
-                                name: displayText,
-                                widget: string,
-                              }
-                            - { label: URL, name: url, widget: string }
+                          - label: "Text"
+                            name: text
+                            widget: object
+                            fields:
+                              - {
+                                  label: "Display Text",
+                                  name: displayText,
+                                  widget: string,
+                                }
+                              - { label: URL, name: url, widget: string }
 
   - name: pages
     label: Pages
