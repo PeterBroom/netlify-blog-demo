@@ -40,6 +40,27 @@ collections:
                 name: itemType
                 widget: select
                 options: ["Link", "Button"]
+      - label: "Sub Menus"
+        name: subNav
+        widget: list
+        types:
+          - label: "Naviigation"
+            name: navigation
+            widget: object
+            fields:
+              - { label: "Display Text", name: displayText, widget: string }
+              - { label: URL, name: url, widget: string }
+              - {
+                  widget: relation,
+                  name: page_relation,
+                  label: "Pages",
+                  required: false,
+                  multiple: false,
+                  collection: pages,
+                  valueField: "{{slug}}",
+                  searchFields: ["title"],
+                  displayFields: ["title"],
+                }
   - name: pages
     label: Pages
     title: Page
