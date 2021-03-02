@@ -8,7 +8,11 @@ navItems:
         - type: text
           displayText: one
           url: /one
+        - type: linkObject
+          displayText: one
+          url: /one
     navtitle: Biocides
+    parent_relation: biocides/index
   - type: navList
     navtitle: Chemicals
     navItem:
