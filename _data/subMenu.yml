@@ -5,8 +5,10 @@ navItems:
         - type: linkObject
           URL: about
           displayText: About
+          url: about
         - type: linkObject
           displayText: Pesticides
           URL: biocides/pesticides/index
+          url: biocides/pesticides/index
     navtitle: Biocides
     parent_relation: biocides/index
