@@ -1,11 +1,11 @@
 {% set navTitle = subMenu.navItems.navtitle %}
-{% set subNav = subMenu.navItems.navItem.link %}
+{% set subNav = subMenu.navItems %}
 
-{% for item in subMenu.navItems %}
+{% for item in subNav %}
 
     <nav>
         <ul>
-            {% for link in item.navItem.link %}
+            {% for link in item.navItem.linkObject %}
                 <li>
                     <a href="{{ link.url | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
                 </li>
