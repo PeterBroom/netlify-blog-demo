@@ -3,14 +3,10 @@ navItems:
     navItem:
       link:
         - type: linkObject
-          URL: about
-          displayText: About
-          url: about
+          displayText: home
+          url: home
         - type: linkObject
-          displayText: Pesticides
-          url: biocides/pesticides/index
-        - type: linkObject
-          displayText: COSH
-          url: cosh/index
+          displayText: Biocides
+          url: biocides/index
     navtitle: Biocides
     parent_relation: biocides/index
