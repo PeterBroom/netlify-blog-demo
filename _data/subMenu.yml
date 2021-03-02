@@ -1,14 +1,14 @@
 navItems:
   - type: navList
-    navtitle: Biocides
     navItem:
       link:
         - type: text
-          displayText: one
-          url: /one
-        - type: text
           displayText: Two
           url: /two
+        - type: text
+          displayText: one
+          url: /one
+    navtitle: Biocides
   - type: navList
     navtitle: Chemicals
     navItem:
