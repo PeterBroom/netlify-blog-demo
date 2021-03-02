@@ -10,6 +10,7 @@ eleventyNavigation:
     - Pesticides
     - REACH
     - Checmicals
+  parent_relation: biocides/index
 metaDescription: asfasdfasdfadsfadsfadsf
 metaKeywords: asdfadsfasdfads
 ---
