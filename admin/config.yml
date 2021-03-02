@@ -101,11 +101,11 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
           - {
-              label: "Children",
-              name: "children",
+              label: "Parent",
+              name: "parent",
               widget: "relation",
               collection: pages,
-              search_fields: ["preview_path", "slug"],
+              search_fields: ["{{page.title}}", "{{page.slug}}"],
               value_field: "{{slug}}",
             }
       - {
