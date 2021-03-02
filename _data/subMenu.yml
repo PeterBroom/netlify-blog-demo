@@ -1,1 +1,6 @@
-navItems: []
+navItems:
+  - type: subNav
+    navtitle: Biocides
+    link:
+      displayText: Chemicals
+      url: /chemcials
