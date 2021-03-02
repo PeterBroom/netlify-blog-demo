@@ -1,4 +1,1 @@
-navItems:
-  - parent_relation: biocides/pesticides/index
-  - parent_relation: biocides/reach/index
-  - parent_relation: biocides/chemicals/index
+navItems: []
