@@ -106,10 +106,10 @@ collections:
           - { label: "Order", name: "order", widget: "number", default: 0 }
           - {
               widget: relation,
-              name: children_relation,
-              label: "Child pages",
+              name: parent_relation,
+              label: "Parent page",
               required: false,
-              multiple: true,
+              multiple: false,
               collection: pages,
               valueField: "{{slug}}",
               searchFields: ["title"],
