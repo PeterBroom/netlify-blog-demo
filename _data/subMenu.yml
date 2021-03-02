@@ -9,5 +9,8 @@ navItems:
         - type: linkObject
           displayText: Pesticides
           url: biocides/pesticides/index
+        - type: linkObject
+          displayText: COSH
+          url: cosh/index
     navtitle: Biocides
     parent_relation: biocides/index
