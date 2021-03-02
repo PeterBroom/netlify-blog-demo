@@ -1,7 +1,13 @@
 navItems:
   - parent_relation: biocides/pesticides/index
+    navtitle: asdf
   - parent_relation: biocides/reach/index
+    navtitle: asdf
   - parent_relation: biocides/chemicals/index
+    navtitle: asdf
   - type: subNav
     displayText: test
     url: /test
+    navtitle: asdf
+  - type: subNav
+    navtitle: Biocides nav
