@@ -48,19 +48,13 @@
   &quot;link&quot;: [
     {
       &quot;type&quot;: &quot;linkObject&quot;,
-      &quot;URL&quot;: &quot;about&quot;,
-      &quot;displayText&quot;: &quot;About&quot;,
-      &quot;url&quot;: &quot;about&quot;
+      &quot;displayText&quot;: &quot;home&quot;,
+      &quot;url&quot;: &quot;home&quot;
     },
     {
       &quot;type&quot;: &quot;linkObject&quot;,
-      &quot;displayText&quot;: &quot;Pesticides&quot;,
-      &quot;url&quot;: &quot;biocides/pesticides/index&quot;
-    },
-    {
-      &quot;type&quot;: &quot;linkObject&quot;,
-      &quot;displayText&quot;: &quot;COSH&quot;,
-      &quot;url&quot;: &quot;cosh/index&quot;
+      &quot;displayText&quot;: &quot;Biocides&quot;,
+      &quot;url&quot;: &quot;biocides/index&quot;
     }
   ]
 }</code></pre>
@@ -68,15 +62,11 @@
         <ul>
             
                 <li>
-                    <a href="../about">About</a>
+                    <a href="../home">home</a>
                 </li>
             
                 <li>
-                    <a href="../biocides/pesticides/index">Pesticides</a>
-                </li>
-            
-                <li>
-                    <a href="../cosh/index">COSH</a>
+                    <a href="../biocides/index">Biocides</a>
                 </li>
             
         </ul>
