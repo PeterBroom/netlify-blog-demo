@@ -3,5 +3,5 @@ topLevelItems:
     url: /
     itemType: Link
   - displayText: About us
-    url: /about-us/
+    url: /about/
     itemType: Link

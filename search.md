@@ -1,5 +1,5 @@
 ---
 title: Search
 layout: layouts/search.njk
-permalink: /search.html
+permalink: /search/index.html
 ---
