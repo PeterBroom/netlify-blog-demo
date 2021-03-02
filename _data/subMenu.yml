@@ -10,3 +10,11 @@ navItems:
           url: biocides/index
     navtitle: Biocides
     parent_relation: biocides/index
+  - type: navList
+    navtitle: Test
+    parent_relation: biocides/index/index.html
+    navItem:
+      link:
+        - type: linkObject
+          displayText: test
+          url: test/index
