@@ -105,7 +105,7 @@ collections:
               name: "children",
               widget: "relation",
               collection: pages,
-              search_fields: name,
+              search_fields: ["preview_path", "slug"],
               value_field: "{{slug}}",
             }
       - {
