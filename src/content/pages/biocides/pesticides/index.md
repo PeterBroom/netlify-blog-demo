@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 permalink: biocides/pesticides/index.html
-title: Pesticides
+title: "Pesticides "
 date: 2021-03-01T16:56:07.256Z
 eleventyNavigation:
   order: 0
