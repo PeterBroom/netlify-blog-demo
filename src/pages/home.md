@@ -3,11 +3,14 @@ layout: layouts/home.njk
 title: Home page
 date: 2016-01-01T00:00:00.000Z
 permalink: /
-metaDescription: This is a description for the homepage. Secret work is yoyo
-metaKeywords: yoyo, home, tickle, tummus, health and safely
+blocks:
+  - type: textBlock
+    content: Test the rich text. Eat the rich!
 eleventyNavigation:
   key: Home
-  order: 1
+  order: 0
+metaDescription: This is a description for the homepage. Secret work is yoyo
+metaKeywords: yoyo, home, tickle, tummus, health and safely
 ---
 # Welcome
 
