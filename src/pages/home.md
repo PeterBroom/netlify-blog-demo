@@ -5,7 +5,10 @@ date: 2016-01-01T00:00:00.000Z
 permalink: /
 blocks:
   - type: textBlock
-    content: Test the rich text. Eat the rich!
+    content: |-
+      ## Eat the rich!
+
+      Test the rich text.
 eleventyNavigation:
   key: Home
   order: 0
