@@ -39,16 +39,25 @@ collections:
           - label: "Nav Items"
             label_singular: "Nav Item"
             name: navItems
-            fields:
-              - { label: "Navigation title", name: navtitle, widget: string }
             widget: list
             types:
               - label: "Sub Navigation"
                 name: subNav
                 widget: object
                 fields:
-                  - { label: "Display Text", name: displayText, widget: string }
-                  - { label: URL, name: url, widget: string }
+                  - label: "navtitle"
+                    name: "navtitle"
+                    widget: string
+                  - label: "link"
+                    name: link
+                    widget: object
+                    fields:
+                      - {
+                          label: "Display Text",
+                          name: displayText,
+                          widget: string,
+                        }
+                      - { label: URL, name: url, widget: string }
 
   - name: pages
     label: Pages
@@ -79,7 +88,6 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - label: "Content Blocks"
         label_singular: "Content Block"
         name: blocks
