@@ -3,6 +3,10 @@ layout: layouts/page.njk
 permalink: biocides/
 title: Biocides
 date: 2021-03-01T16:51:59.942Z
+blocks:
+  - type: textBlock
+    heading: Eat the rich!
+    content: xcvsvdasadsffdassaf
 eleventyNavigation:
   order: 0
   key: Biocides
