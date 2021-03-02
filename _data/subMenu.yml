@@ -1,6 +1,4 @@
 navItems:
-  - type: subNav
-    navtitle: Biocides
   - type: navList
     navItem:
       link:
