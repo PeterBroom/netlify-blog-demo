@@ -54,17 +54,13 @@ collections:
           - {
               label: Pages,
               name: page_relation,
-              widget: list,
-              types:
-                {
-                  widget: relation,
-                  required: true,
-                  multiple: false,
-                  collection: pages,
-                  valueField: "{{slug}}",
-                  searchFields: ["title"],
-                  displayFields: ["title"],
-                },
+              widget: relation,
+              required: true,
+              multiple: false,
+              collection: pages,
+              valueField: "{{slug}}",
+              searchFields: ["title"],
+              displayFields: ["title"],
             }
   - name: pages
     label: Pages
