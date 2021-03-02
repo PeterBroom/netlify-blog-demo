@@ -1,0 +1,13 @@
+<nav>
+    {% set headerNav = headerNav.topLevelItems %}
+    <ul>
+        {% for item in headerNav %}
+            <li>
+                {% if item.itemType == 'Link' %}
+                    <a href="{{ item.url | url }}"{% if item.url == page.url %} data-current="current item"{% endif %}>{{ item.displayText }}</a>
+                {% else %}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,6 +1,5 @@
 <nav>
     {% set navPages = collections.all | eleventyNavigation %}
-    {{ navPages | dump }}
     <ul>
         {% for entry in navPages %}
             <li>

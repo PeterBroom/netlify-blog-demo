@@ -7,8 +7,9 @@
             {# <em>
                 <a href="{{ '/' | url }}">{{ metadata.title }}</a>
             </em> #}
-            {% include "components/nav.njk" %}
             <h1>Eleventy + Netlify CMS Blog Example</h1>
+            {% include "components/header-nav.njk" %}
+
         </header>
 
         {{ content | safe }}
