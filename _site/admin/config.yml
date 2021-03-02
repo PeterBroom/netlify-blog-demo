@@ -50,14 +50,18 @@ collections:
                     widget: string
                   - label: "link"
                     name: link
-                    widget: list
-                    types:
-                      - {
-                          label: "Display Text",
-                          name: displayText,
-                          widget: string,
-                        }
-                      - { label: URL, name: url, widget: string }
+                    widget: object
+                    fields:
+                      - label: "linkObject"
+                        name: linkObject
+                        widget: object
+                        fields:
+                          - {
+                              label: "Display Text",
+                              name: displayText,
+                              widget: string,
+                            }
+                          - { label: URL, name: url, widget: string }
 
   - name: pages
     label: Pages
