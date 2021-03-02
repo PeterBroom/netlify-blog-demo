@@ -111,7 +111,7 @@ collections:
               required: false,
               multiple: true,
               collection: pages,
-              valueField: title,
+              valueField: slug,
               searchFields: ["title"],
               displayFields: ["title"],
             }
