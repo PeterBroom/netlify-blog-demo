@@ -4,3 +4,8 @@ navItems:
     link:
       displayText: Chemicals
       url: /chemcials
+  - type: subNav
+    navtitle: Pesticides
+    link:
+      displayText: Overview
+      url: /overview
