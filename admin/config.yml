@@ -111,7 +111,7 @@ collections:
               required: false,
               multiple: false,
               collection: pages,
-              valueField: "{{slug}}",
+              valueField: "{{url}}",
               searchFields: ["title"],
               displayFields: ["title"],
             }
