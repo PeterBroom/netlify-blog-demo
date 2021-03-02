@@ -108,6 +108,13 @@ collections:
           widget: "hidden",
           default: "layouts/page.njk",
         }
+      - {
+          label: "Permalink",
+          name: "permalink",
+          widget: "string",
+          required: true,
+          valueField: "{{slug}}/index.html",
+        }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Content Blocks"
