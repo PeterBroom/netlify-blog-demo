@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Eleventy + Netlify CMS Blog Example</title>
+    </head>
+    <body>
+        <header>
+    <h1>Netlify - Eleventy - Nunjucks website</h1>
+    <div class="site-search">
+    <form action="./search.html">
+        <div class="field">
+            <label for="searchField">Search</label>
+            <input class="header-search" type="search" placeholder="Search..." id="headerSearchField"/>
+        </div>
+    </form>
+</div>
+    <nav>
+    
+    <ul>
+        
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+        
+            <li>
+                
+                    <a href="/about/">About us</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+</header>
+        
+
+
+
+
+    
+    <p>parent: biocides/index</p>
+    <p>pageIdentifier: biocides</p>
+    <p>page.url: /biocides</p>
+
+    <pre>
+<code>
+{
+  &quot;link&quot;: [
+    {
+      &quot;type&quot;: &quot;linkObject&quot;,
+      &quot;URL&quot;: &quot;about&quot;,
+      &quot;displayText&quot;: &quot;About&quot;,
+      &quot;url&quot;: &quot;about&quot;
+    },
+    {
+      &quot;type&quot;: &quot;linkObject&quot;,
+      &quot;displayText&quot;: &quot;Pesticides&quot;,
+      &quot;url&quot;: &quot;biocides/pesticides/index&quot;
+    },
+    {
+      &quot;type&quot;: &quot;linkObject&quot;,
+      &quot;displayText&quot;: &quot;COSH&quot;,
+      &quot;url&quot;: &quot;cosh/index&quot;
+    }
+  ]
+}</code></pre>
+    <nav>
+        <ul>
+            
+                <li>
+                    <a href="../about">About</a>
+                </li>
+            
+                <li>
+                    <a href="../biocides/pesticides/index">Pesticides</a>
+                </li>
+            
+                <li>
+                    <a href="../cosh/index">COSH</a>
+                </li>
+            
+        </ul>
+    </nav>
+
+        <h1>Biocides</h1>
+
+
+
+
+        <nav>
+    
+    <ul>
+        
+            <li>
+                
+                    <a href="/search/">Search</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+    </body>
+</html>
