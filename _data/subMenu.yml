@@ -1,1 +1,3 @@
-navItems: []
+navItems:
+  - type: subNav
+    navtitle: Biocides
