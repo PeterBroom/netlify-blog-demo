@@ -21,10 +21,6 @@ collections:
             fields:
               - { label: "Display Text", name: displayText, widget: string }
               - { label: URL, name: url, widget: string }
-              - label: "Item Type"
-                name: itemType
-                widget: select
-                options: ["Link", "Button"]
       - label: "Footer Menu"
         name: footerNav
         file: "_data/footerNav.yml"
@@ -36,10 +32,6 @@ collections:
             fields:
               - { label: "Display Text", name: displayText, widget: string }
               - { label: URL, name: url, widget: string }
-              - label: "Item Type"
-                name: itemType
-                widget: select
-                options: ["Link", "Button"]
       - label: "Submenus"
         name: subMenu
         file: "_data/subMenu.yml"
@@ -47,6 +39,8 @@ collections:
           - label: "Nav Items"
             label_singular: "Nav Item"
             name: navItems
+            fields:
+              - { label: "Navigation title", name: navtitle, widget: string }
             widget: list
             types:
               - label: "Sub Navigation"
