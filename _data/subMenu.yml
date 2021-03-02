@@ -1,21 +1,15 @@
 navItems:
   - type: navList
-    navtitle: Biocides
     navItem:
       link:
-        - type: text
-          displayText: one
-          url: /one
         - type: text
           displayText: Two
           url: /two
-  - type: navList
-    navtitle: Chemicals
-    navItem:
-      link:
         - type: text
           displayText: one
           url: /one
-        - type: text
-          displayText: two
-          url: /two
+        - type: linkObject
+          displayText: one
+          url: /one
+    navtitle: Biocides
+    parent_relation: biocides/index
