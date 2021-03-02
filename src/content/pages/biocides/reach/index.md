@@ -6,6 +6,7 @@ date: 2021-03-02T13:00:52.161Z
 eleventyNavigation:
   order: 0
   key: REACH
+  parent_relation: biocides/index
 metaDescription: adsfasdfsdfasfasdfa
 metaKeywords: adsfadsff
 ---
