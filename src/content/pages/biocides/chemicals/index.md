@@ -10,7 +10,7 @@ blocks:
 eleventyNavigation:
   order: 0
   key: Checmicals
-  parent_relation: ""
+  parent_relation: "biocides"
 metaDescription: asdfadsfasdfasdfasfdasf
 metaKeywords: asdfafdsf
 ---
