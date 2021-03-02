@@ -42,6 +42,7 @@ collections:
                 options: ["Link", "Button"]
   - name: pages
     label: Pages
+    title: Page
     label_singular: "Page"
     identifier_field: name
     folder: src/pages

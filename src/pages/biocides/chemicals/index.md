@@ -8,6 +8,7 @@ metaKeywords: asdfafdsf
 eleventyNavigation:
   order: 0
   key: Checmicals
+  parent: biocides
 blocks:
   - type: hero
     heading: My Hero
