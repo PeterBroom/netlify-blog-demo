@@ -41,19 +41,19 @@ collections:
             name: navItems
             widget: list
             types:
-              - label: "Sub Navigation"
-                name: subNav
+              - label: "Navigation List"
+                name: navList
                 widget: object
                 fields:
                   - label: "Navigation Title"
                     name: "navtitle"
                     widget: string
-                  - label: "Navigation List"
-                    name: navList
+                  - label: "Navigation item"
+                    name: navItem
                     widget: object
                     fields:
-                      - label: "Link Object"
-                        name: linkObject
+                      - label: "Link"
+                        name: link
                         widget: list
                         types:
                           - {
