@@ -100,6 +100,12 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
+          - {
+              label: "Children",
+              name: "children",
+              widget: "relation",
+              value_field: "{{slug}}",
+            }
       - {
           label: "Meta description",
           name: "metaDescription",
