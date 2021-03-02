@@ -43,17 +43,17 @@ collections:
       - label: "Sub Menus"
         name: subNav
         widget: list
-        types:
+        file: "_data/subNav.yml"
+        fields:
           - label: "Naviigation"
             name: navigation
             widget: object
             fields:
               - { label: "Display Text", name: displayText, widget: string }
-              - { label: URL, name: url, widget: string }
               - {
-                  widget: relation,
+                  label: Pages,
                   name: page_relation,
-                  label: "Pages",
+                  widget: relation,
                   required: false,
                   multiple: false,
                   collection: pages,
