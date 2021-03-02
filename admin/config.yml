@@ -45,22 +45,27 @@ collections:
         widget: list
         file: "_data/subNav.yml"
         fields:
-          - label: "Naviigation"
-            name: navigation
-            widget: object
-            fields:
-              - { label: "Display Text", name: displayText, widget: string }
-              - {
-                  label: Pages,
-                  name: page_relation,
+          - {
+              label: "Display Text",
+              name: displayText,
+              widget: string,
+              required: true,
+            }
+          - {
+              label: Pages,
+              name: page_relation,
+              widget: list,
+              types:
+                {
                   widget: relation,
-                  required: false,
+                  required: true,
                   multiple: false,
                   collection: pages,
                   valueField: "{{slug}}",
                   searchFields: ["title"],
                   displayFields: ["title"],
-                }
+                },
+            }
   - name: pages
     label: Pages
     title: Page
