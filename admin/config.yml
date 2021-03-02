@@ -45,17 +45,17 @@ collections:
                 name: subNav
                 widget: object
                 fields:
-                  - label: "navtitle"
+                  - label: "Navigation Title"
                     name: "navtitle"
                     widget: string
-                  - label: "link"
-                    name: link
+                  - label: "Navigation List"
+                    name: navList
                     widget: object
                     fields:
-                      - label: "linkObject"
+                      - label: "Link Object"
                         name: linkObject
-                        widget: object
-                        fields:
+                        widget: list
+                        types:
                           - {
                               label: "Display Text",
                               name: displayText,
