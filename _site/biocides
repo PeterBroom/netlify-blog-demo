@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Eleventy + Netlify CMS Blog Example</title>
+    </head>
+    <body>
+        <header>
+    <h1>Netlify - Eleventy - Nunjucks website</h1>
+    <div class="site-search">
+    <form action="./search.html">
+        <div class="field">
+            <label for="searchField">Search</label>
+            <input class="header-search" type="search" placeholder="Search..." id="headerSearchField"/>
+        </div>
+    </form>
+</div>
+    <nav>
+    
+    <ul>
+        
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+        
+            <li>
+                
+                    <a href="/about/">About us</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+</header>
+        
+
+
+
+
+    
+    <p>parent: biocides/index</p>
+    <p>pageIdentifier: biocides</p>
+    <p>page.url: /biocides</p>
+
+    <pre>
+<code>
+{
+  &quot;link&quot;: [
+    {
+      &quot;type&quot;: &quot;linkObject&quot;,
+      &quot;displayText&quot;: &quot;home&quot;,
+      &quot;url&quot;: &quot;home&quot;
+    },
+    {
+      &quot;type&quot;: &quot;linkObject&quot;,
+      &quot;displayText&quot;: &quot;Biocides&quot;,
+      &quot;url&quot;: &quot;biocides/index&quot;
+    }
+  ]
+}</code></pre>
+    <nav>
+        <ul>
+            
+                <li>
+                    <a href="../home">home</a>
+                </li>
+            
+                <li>
+                    <a href="../biocides/index">Biocides</a>
+                </li>
+            
+        </ul>
+    </nav>
+
+    
+    <p>parent: biocides/index/index.html</p>
+    <p>pageIdentifier: biocides</p>
+    <p>page.url: /biocides</p>
+
+    <pre>
+<code>
+{
+  &quot;link&quot;: [
+    {
+      &quot;type&quot;: &quot;linkObject&quot;,
+      &quot;displayText&quot;: &quot;test&quot;,
+      &quot;url&quot;: &quot;test/index&quot;
+    }
+  ]
+}</code></pre>
+    <nav>
+        <ul>
+            
+                <li>
+                    <a href="../test/index">test</a>
+                </li>
+            
+        </ul>
+    </nav>
+
+        <h1>Biocides</h1>
+
+
+
+
+        <nav>
+    
+    <ul>
+        
+            <li>
+                
+                    <a href="/search/">Search</a>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+    </body>
+</html>

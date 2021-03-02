@@ -55,7 +55,7 @@ collections:
                       required: false,
                       multiple: false,
                       collection: pages,
-                      valueField: "{{slug}}/index.html",
+                      valueField: slug,
                       searchFields: ["title"],
                       displayFields: ["title"],
                     }
