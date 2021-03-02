@@ -2,12 +2,6 @@ navItems:
   - type: navList
     navItem:
       link:
-        - type: text
-          displayText: Two
-          url: /two
-        - type: text
-          displayText: one
-          url: /one
         - type: linkObject
           displayText: one
           url: /one

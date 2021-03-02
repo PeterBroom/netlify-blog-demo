@@ -1,11 +1,19 @@
 {% set navTitle = subMenu.navItems.navtitle %}
 {% set subNav = subMenu.navItems %}
+{% set pageIdentifier = page.fileSlug %}
 
 {% for item in subNav %}
+    {% set parent = item.parent_relation %}
+    <p>parent: {{ parent }}</p>
+    <p>pageIdentifier: {{ pageIdentifier }}</p>
+    <p>page.url: {{ page.url }}</p>
 
+    <pre>
+<code>
+{{item.navItem | dump(2)}}</code></pre>
     <nav>
         <ul>
-            {% for link in item.navItem.linkObject %}
+            {% for link in item.navItem.link %}
                 <li>
                     <a href="{{ link.url | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
                 </li>
