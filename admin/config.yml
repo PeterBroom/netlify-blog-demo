@@ -44,7 +44,6 @@ collections:
     label: Pages
     title: Page
     label_singular: "Page"
-    identifier_field: name
     folder: src/pages
     create: true
     nested:
@@ -101,12 +100,15 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
           - {
-              label: "Parent",
-              name: "parent",
-              widget: "relation",
+              widget: relation,
+              name: parent,
+              label: Parent page,
+              required: false,
+              multiple: true,
               collection: pages,
-              search_fields: ["{{page.title}}", "{{page.slug}}"],
-              value_field: "{{slug}}",
+              valueField: slug,
+              searchFields: ["title"],
+              displayFields: ["title"],
             }
       - {
           label: "Meta description",
