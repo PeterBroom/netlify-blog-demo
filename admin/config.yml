@@ -55,7 +55,7 @@ collections:
                       required: false,
                       multiple: false,
                       collection: pages,
-                      valueField: "{{fileSlug}}",
+                      valueField: "{{slug}}",
                       searchFields: ["title"],
                       displayFields: ["title"],
                     }
@@ -87,7 +87,7 @@ collections:
     nested:
       depth: 6 # max depth to show in the collection tree
       summary: "{{meta.path}}"
-    slug: "{{slug}}"
+    slug: "{{slug}}/index"
     preview_path: "{{permalink}}"
     editor:
       preview: false
