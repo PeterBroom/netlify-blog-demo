@@ -50,8 +50,8 @@ collections:
                     widget: string
                   - label: "link"
                     name: link
-                    widget: object
-                    fields:
+                    widget: list
+                    types:
                       - {
                           label: "Display Text",
                           name: displayText,
