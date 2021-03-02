@@ -1,11 +1,3 @@
 navItems:
   - type: subNav
     navtitle: Biocides
-    link:
-      displayText: Chemicals
-      url: /chemcials
-  - type: subNav
-    navtitle: Pesticides
-    link:
-      displayText: Overview
-      url: /overview
