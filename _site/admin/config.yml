@@ -48,16 +48,27 @@ collections:
                   - label: "Navigation Title"
                     name: "navtitle"
                     widget: string
+                  - {
+                      label: "Parent page",
+                      widget: relation,
+                      name: parent_relation,
+                      required: false,
+                      multiple: false,
+                      collection: pages,
+                      valueField: "{{slug}}",
+                      searchFields: ["title"],
+                      displayFields: ["title"],
+                    }
                   - label: "Navigation item"
                     name: navItem
                     widget: object
                     fields:
-                      - label: "Link"
+                      - label: "Add a Link"
                         name: link
                         widget: list
                         types:
-                          - label: "Text"
-                            name: text
+                          - label: "Link"
+                            name: linkObject
                             widget: object
                             fields:
                               - {

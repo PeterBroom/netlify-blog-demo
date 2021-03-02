@@ -1,23 +1,15 @@
-<pre>
-<code>
-{{ page | dump(2) }}
-</code>
-</pre>
-<nav>
-    {% set subNav = collections.all | eleventyNavigation %}
-    <ul>
-        {% for item in subNav %}
-            <li>
-                <a href="{{ item.url | url }}"{% if item.url == page.url %} data-current="current item"{% endif %}>{{ item.title }}</a>
-                <pre>
-<code>
-    {{ item | dump }}
-</code>
-</pre>
+{% set navTitle = subMenu.navItems.navtitle %}
+{% set subNav = subMenu.navItems.navItem.link %}
 
-                {% if page.fileSlug + '/index' == item.parent_relation %}
-                Yeah{% endif %}
-            </li>
-        {% endfor %}
-    </ul>
-</nav>
+{% for item in subMenu.navItems %}
+
+    <nav>
+        <ul>
+            {% for link in item.navItem.link %}
+                <li>
+                    <a href="{{ link.url | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endfor %}

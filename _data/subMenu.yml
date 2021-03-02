@@ -1,5 +1,6 @@
 navItems:
   - type: navList
+    navtitle: Biocides
     navItem:
       link:
         - type: text
@@ -8,7 +9,6 @@ navItems:
         - type: text
           displayText: Two
           url: /two
-    navtitle: Biocides
   - type: navList
     navtitle: Chemicals
     navItem:
