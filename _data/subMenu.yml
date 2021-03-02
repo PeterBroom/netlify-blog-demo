@@ -9,3 +9,13 @@ navItems:
           displayText: Two
           url: /two
     navtitle: Biocides
+  - type: navList
+    navtitle: Chemicals
+    navItem:
+      link:
+        - type: text
+          displayText: one
+          url: /one
+        - type: text
+          displayText: two
+          url: /two
