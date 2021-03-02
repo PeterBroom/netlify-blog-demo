@@ -15,7 +15,7 @@
         <ul>
             {% for link in item.navItem.link %}
                 <li>
-                    <a href="{{ link.url | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
+                    <a href="../{{ link.URL | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
                 </li>
             {% endfor %}
         </ul>

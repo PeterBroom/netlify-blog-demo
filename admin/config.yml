@@ -79,7 +79,7 @@ collections:
                               - {
                                   label: "page",
                                   widget: relation,
-                                  name: URL,
+                                  name: url,
                                   required: false,
                                   multiple: false,
                                   collection: pages,
@@ -97,7 +97,7 @@ collections:
     nested:
       depth: 6 # max depth to show in the collection tree
       summary: "{{meta.path}}"
-    slug: "{{slug}}/index"
+    slug: "{{slug}}"
     preview_path: "{{permalink}}"
     editor:
       preview: false
