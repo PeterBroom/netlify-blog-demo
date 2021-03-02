@@ -13,13 +13,3 @@ navItems:
           url: /one
     navtitle: Biocides
     parent_relation: biocides/index
-  - type: navList
-    navtitle: Chemicals
-    navItem:
-      link:
-        - type: text
-          displayText: one
-          url: /one
-        - type: text
-          displayText: two
-          url: /two
