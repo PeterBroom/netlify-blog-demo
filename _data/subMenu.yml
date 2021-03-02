@@ -1,3 +1,13 @@
 navItems:
   - type: subNav
     navtitle: Biocides
+  - type: navList
+    navItem:
+      link:
+        - type: text
+          displayText: one
+          url: /one
+        - type: text
+          displayText: Two
+          url: /two
+    navtitle: Biocides
