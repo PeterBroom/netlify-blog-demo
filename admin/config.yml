@@ -104,6 +104,8 @@ collections:
               label: "Children",
               name: "children",
               widget: "relation",
+              collection: pages,
+              search_fields: name,
               value_field: "{{slug}}",
             }
       - {
