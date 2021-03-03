@@ -117,7 +117,7 @@ collections:
           widget: "string",
           name: "slug",
           label: "Slug",
-          index_file: "index",
+          index_file: "/",
           required: true,
         }
       - {
