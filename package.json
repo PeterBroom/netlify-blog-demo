@@ -27,6 +27,6 @@
     "elasticlunr": "^0.9.5",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.0.0",
-    "markdown-it": "^12.0.4",
+    "markdown-it": "^12.0.4"
   }
 }
