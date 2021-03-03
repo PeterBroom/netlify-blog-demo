@@ -15,3 +15,11 @@ navItems:
     parent_relation: biocides/index/index.html
     navItem:
       link: []
+  - type: navList
+    navtitle: Biocides
+    parent_relation: biocides/index
+    navItem:
+      link:
+        - type: linkObject
+          displayText: Chemcials
+          url: about
