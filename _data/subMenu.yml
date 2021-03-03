@@ -14,7 +14,4 @@ navItems:
     navtitle: Test
     parent_relation: biocides/index/index.html
     navItem:
-      link:
-        - type: linkObject
-          displayText: test
-          url: test/index
+      link: []
