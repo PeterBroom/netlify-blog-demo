@@ -103,7 +103,7 @@ collections:
       depth: 6 # max depth to show in the collection tree
       summary: "{{meta.path}}"
     slug: "{{slug}}"
-    preview_path: "{{permalink}}"
+    preview_path: "{{fields.permalink}}"
     editor:
       preview: false
     fields:
@@ -118,7 +118,8 @@ collections:
           name: "permalink",
           widget: "string",
           required: true,
-          valueField: "{{meta.path}}/{{title}}/index.html",
+          default: "{{meta.path}}/{{title}}/index.html",
+          hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
