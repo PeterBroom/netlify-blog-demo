@@ -20,12 +20,13 @@
   },
   "homepage": "https://github.com/PeterBroom/test-netlify-cms#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
     "elasticlunr": "^0.9.5",
     "html-minifier": "^4.0.0",
-    "js-yaml": "^4.0.0"
+    "js-yaml": "^4.0.0",
+    "markdown-it": "^12.0.4",
   }
 }

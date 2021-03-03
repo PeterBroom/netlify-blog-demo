@@ -1,6 +1,5 @@
 {% for block in blocks %}
-    {{block.type}}
-    {% if block.type == 'hero' %}
+    {% if block.type == 'hero' and block.content != '' %}
         {% include "components/hero.njk" %}
     {% endif %}
     {% if block.type == 'textBlock' %}

@@ -2,6 +2,11 @@ const yaml = require("js-yaml");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const searchFilter = require("./src/filters/searchFilter");
+const md = require('markdown-it')({
+    html: true,
+    breaks: true,
+    linkify: true,
+});
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -28,6 +33,10 @@ module.exports = function (eleventyConfig) {
 
     // Search filter
     eleventyConfig.addFilter("search", searchFilter);
+
+    // Nunjucks Markdown rendering for blocks
+    eleventyConfig.setLibrary('md', md);
+    eleventyConfig.addFilter('markdownify', str => md.render(str));
 
     // Page collection
     eleventyConfig.addCollection("pages", collection => {

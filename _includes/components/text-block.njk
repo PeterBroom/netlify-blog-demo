@@ -1,5 +1,3 @@
 <div class="component text-block">
-    {% if block.content and block.content != '' %}
-        {{ block.content | safe }}
-    {% endif %}
+    {{ block.content | markdownify | safe }}
 </div>
