@@ -57,7 +57,7 @@ collections:
                       required: true,
                       multiple: false,
                       collection: pages,
-                      valueField: "{{permalink}}",
+                      valueField: "{{meta.path}}",
                       searchFields: ["title"],
                       displayFields: ["title"],
                     }
