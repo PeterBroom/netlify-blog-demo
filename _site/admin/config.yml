@@ -43,7 +43,7 @@ collections:
             types:
               - label: "Navigation List"
                 name: navList
-                widget: object
+                widget: list
                 fields:
                   - label: "Navigation Title"
                     name: "navtitle"
