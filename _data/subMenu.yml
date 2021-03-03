@@ -1,20 +1,15 @@
 navItems:
-  - type: navList
+  - parent_relation: biocides/index
     navItem:
       link:
         - type: linkObject
-          displayText: home
-          url: home
-        - type: linkObject
-          displayText: Biocides
-          url: biocides/index
-    navtitle: Biocides
+          displayText: Chemcials
+          url: about
+  - type: navList
+    navtitle: Biocides nav
     parent_relation: biocides/index
-  - type: navList
-    navtitle: Test
-    parent_relation: biocides/index/index.html
     navItem:
       link:
         - type: linkObject
-          displayText: test
-          url: test/index
+          displayText: About
+          url: about
