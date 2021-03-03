@@ -57,7 +57,7 @@ collections:
                       required: true,
                       multiple: false,
                       collection: pages,
-                      valueField: "{{meta.path}}",
+                      valueField: "{{slug}}",
                       searchFields: ["title"],
                       displayFields: ["title"],
                     }
@@ -202,7 +202,7 @@ collections:
           {
             widget: string,
             label: "Path",
-            index_file: "index",
+            index_file: "/",
             hint: "Path can be a sub-folder (e.g. main/sub)",
           },
       }
