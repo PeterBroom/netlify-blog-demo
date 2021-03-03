@@ -1,7 +1,7 @@
 navItems:
   - type: navList
-    navtitle: Biocides nav
-    parent_relation: /biocides/index.html
+    navtitle: "Biocides nav "
+    parent_relation: biocides/index
     navItem:
       link:
         - type: linkObject
