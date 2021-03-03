@@ -1,5 +1,7 @@
 navItems:
   - type: navList
+    navtitle: Biocides
+    parent_relation: biocides/index
     navItem:
       link:
         - type: linkObject
@@ -8,16 +10,7 @@ navItems:
         - type: linkObject
           displayText: Biocides
           url: biocides/index
-    navtitle: Biocides
-    parent_relation: biocides/index
-  - type: navList
-    navtitle: Test
-    parent_relation: biocides/index/index.html
-    navItem:
-      link: []
-  - type: navList
-    navtitle: Biocides
-    parent_relation: biocides/index
+  - parent_relation: biocides/index
     navItem:
       link:
         - type: linkObject
