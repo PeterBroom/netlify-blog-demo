@@ -103,6 +103,7 @@ collections:
       depth: 6 # max depth to show in the collection tree
       summary: "{{meta.path}}"
     slug: "{{slug}}"
+    path: "{{meta.path}}"
     preview_path: "{{fields.permalink}}"
     editor:
       preview: false
@@ -112,13 +113,6 @@ collections:
           name: "layout",
           widget: "hidden",
           default: "layouts/page.njk",
-        }
-      - {
-          widget: "string",
-          name: "slug",
-          label: "Slug",
-          index_file: "/",
-          required: true,
         }
       - {
           label: "Permalink",
