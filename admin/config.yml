@@ -57,7 +57,7 @@ collections:
                       required: true,
                       multiple: false,
                       collection: pages,
-                      valueField: "{{slug}}",
+                      valueField: "{{path}}",
                       searchFields: ["title"],
                       displayFields: ["title"],
                     }
@@ -118,7 +118,7 @@ collections:
           name: "permalink",
           widget: "string",
           required: true,
-          default: "{{meta.path}}/{{title}}/index.html",
+          default: "main/sub/index.html",
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
       - { label: "Title", name: "title", widget: "string", required: true }
