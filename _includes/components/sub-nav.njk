@@ -1,7 +1,9 @@
 {% set navTitle = subMenu.navItems.navtitle %}
 {% set subNav = subMenu.navItems %}
 {% set pageIdentifier = page.fileSlug %}
-
+<pre>
+<code>
+{{ subNav | dump(2)}}</code></pre>
 {% for item in subNav %}
     {% set parent = item.parent_relation %}
     <p>parent: {{ parent }}</p>

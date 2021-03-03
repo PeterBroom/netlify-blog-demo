@@ -57,7 +57,7 @@ collections:
                       required: true,
                       multiple: false,
                       collection: pages,
-                      valueField: "{{path}}",
+                      valueField: "{{permalink}}",
                       searchFields: ["title"],
                       displayFields: ["title"],
                     }
@@ -119,6 +119,11 @@ collections:
           widget: "string",
           required: true,
           default: "main/sub/index.html",
+          pattern:
+            [
+              "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+              "A slug can have no spaces or special characters",
+            ],
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
       - { label: "Title", name: "title", widget: "string", required: true }
