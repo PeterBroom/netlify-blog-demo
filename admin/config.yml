@@ -103,6 +103,7 @@ collections:
       depth: 6 # max depth to show in the collection tree
       summary: "{{meta.path}}"
     slug: "{{slug}}"
+    identifier_field: name
     preview_path: "{{fields.permalink}}"
     editor:
       preview: false
