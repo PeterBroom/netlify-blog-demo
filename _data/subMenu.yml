@@ -5,5 +5,5 @@ navItems:
     navItem:
       link:
         - type: linkObject
-          displayText: About
-          url: about
+          displayText: PIC
+          url: biocides/pic/index
