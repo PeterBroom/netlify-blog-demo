@@ -67,6 +67,7 @@ collections:
                       - label: "Add a Link"
                         name: link
                         widget: list
+                        summary: "{{fields.displayText}}"
                         types:
                           - label: "Link"
                             name: linkObject
