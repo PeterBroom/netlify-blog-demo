@@ -52,10 +52,10 @@ collections:
                       label: "Parent page",
                       widget: relation,
                       name: parent_relation,
-                      required: false,
+                      required: true,
                       multiple: false,
                       collection: pages,
-                      valueField: slug,
+                      valueField: "{{slug}}",
                       searchFields: ["title"],
                       displayFields: ["title"],
                     }
@@ -75,12 +75,13 @@ collections:
                                   label: "Display Text",
                                   name: displayText,
                                   widget: string,
+                                  required: true,
                                 }
                               - {
                                   label: "page",
                                   widget: relation,
                                   name: url,
-                                  required: false,
+                                  required: true,
                                   multiple: false,
                                   collection: pages,
                                   valueField: "{{slug}}",
