@@ -162,6 +162,17 @@ collections:
         widget: "object"
         fields:
           - { label: "Key", name: "key", widget: "string" }
+          - {
+              label: "Parent",
+              widget: relation,
+              name: parent_relation,
+              required: false,
+              multiple: false,
+              collection: pages,
+              valueField: "{{slug}}",
+              searchFields: ["title"],
+              displayFields: ["title"],
+            }
           - { label: "Order", name: "order", widget: "number", default: 0 }
           - {
               widget: relation,

@@ -3,23 +3,30 @@
 {% set pageIdentifier = page.fileSlug %}
 <pre>
 <code>
-{{ page | dump(2)}}</code></pre>
-{% for item in subNav %}
-    {% set parent = item.parent_relation %}
-    <p>parent: {{ parent }}</p>
-    <p>pageIdentifier: {{ pageIdentifier }}</p>
-    <p>page.url: {{ page.url }}</p>
+{% set navPages = collections.all | eleventyNavigation %}
 
-    <pre>
-<code>
-{{item.navItem | dump(2)}}</code></pre>
-    <nav>
-        <ul>
-            {% for link in item.navItem.link %}
-                <li>
-                    <a href="../{{ link.url | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </nav>
+{# {{ page | dump(2)}} #}
+{{navPages | dump(2) }}
+</code>
+</pre>
+{% for item in subNav %}
+
+</code>
+</pre>
+{% set parent = item.parent_relation %}
+<p>parent: {{ parent  | slug }}</p>
+<p>pageIdentifier: {{ pageIdentifier  }}</p>
+<p>page.url: {{ page.url  }}</p>
+</code>
+</pre>
+<nav>
+<ul>
+{% for link in item.navItem.link %}
+
+<li>
+    <a href="../{{ link.url | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
+</li>
+{% endfor %}
+</ul>
+</nav>
 {% endfor %}

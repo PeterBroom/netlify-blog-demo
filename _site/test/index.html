@@ -1,20 +1,68 @@
 <html><head><title>Eleventy + Netlify CMS Blog Example</title></head><body><header><h1>Netlify - Eleventy - Nunjucks website</h1><div class="site-search"><form action="./search.html"><div class="field"><label for="searchField">Search</label> <input class="header-search" type="search" placeholder="Search..." id="headerSearchField"></div></form></div><nav><ul><li><a href="/">Home</a></li><li><a href="/about/">About us</a></li></ul></nav></header><pre>
 <code>
-{
-  &quot;date&quot;: &quot;2021-03-02T17:33:56.133Z&quot;,
-  &quot;inputPath&quot;: &quot;./src/content/pages/test/index.md&quot;,
-  &quot;fileSlug&quot;: &quot;test&quot;,
-  &quot;filePathStem&quot;: &quot;/src/content/pages/test/index&quot;,
-  &quot;url&quot;: &quot;/test/&quot;,
-  &quot;outputPath&quot;: &quot;_site/test/index.html&quot;
-}</code></pre><p>parent: biocides/index</p><p>pageIdentifier: test</p><p>page.url: /test/</p><pre>
-<code>
-{
-  &quot;link&quot;: [
-    {
-      &quot;type&quot;: &quot;linkObject&quot;,
-      &quot;displayText&quot;: &quot;PIC&quot;,
-      &quot;url&quot;: &quot;biocides/pic/index&quot;
-    }
-  ]
-}</code></pre><nav><ul><li><a href="../biocides/pic/index">PIC</a></li></ul></nav><h1>Test</h1><nav><ul><li><a href="/search/">Search</a></li></ul></nav></body></html>
+
+
+
+[
+  {
+    &quot;key&quot;: &quot;Home&quot;,
+    &quot;order&quot;: 0,
+    &quot;url&quot;: &quot;/&quot;,
+    &quot;pluginType&quot;: &quot;eleventy-navigation&quot;,
+    &quot;title&quot;: &quot;Home&quot;,
+    &quot;children&quot;: [
+      {
+        &quot;key&quot;: &quot;About&quot;,
+        &quot;order&quot;: 0,
+        &quot;parent&quot;: &quot;Home&quot;,
+        &quot;url&quot;: &quot;/about/&quot;,
+        &quot;pluginType&quot;: &quot;eleventy-navigation&quot;,
+        &quot;parentKey&quot;: &quot;Home&quot;,
+        &quot;title&quot;: &quot;About&quot;,
+        &quot;children&quot;: []
+      }
+    ]
+  },
+  {
+    &quot;order&quot;: 0,
+    &quot;key&quot;: &quot;Biocides&quot;,
+    &quot;url&quot;: &quot;/biocides/&quot;,
+    &quot;pluginType&quot;: &quot;eleventy-navigation&quot;,
+    &quot;title&quot;: &quot;Biocides&quot;,
+    &quot;children&quot;: []
+  },
+  {
+    &quot;order&quot;: 0,
+    &quot;key&quot;: &quot;test&quot;,
+    &quot;url&quot;: &quot;/test/&quot;,
+    &quot;pluginType&quot;: &quot;eleventy-navigation&quot;,
+    &quot;title&quot;: &quot;test&quot;,
+    &quot;children&quot;: []
+  },
+  {
+    &quot;order&quot;: 0,
+    &quot;key&quot;: &quot;PIC&quot;,
+    &quot;url&quot;: &quot;/biocides/pic/&quot;,
+    &quot;pluginType&quot;: &quot;eleventy-navigation&quot;,
+    &quot;title&quot;: &quot;PIC&quot;,
+    &quot;children&quot;: []
+  },
+  {
+    &quot;order&quot;: 0,
+    &quot;key&quot;: &quot;TEST&quot;,
+    &quot;url&quot;: &quot;/biocides/test-page/&quot;,
+    &quot;pluginType&quot;: &quot;eleventy-navigation&quot;,
+    &quot;title&quot;: &quot;TEST&quot;,
+    &quot;children&quot;: []
+  },
+  {
+    &quot;order&quot;: 0,
+    &quot;key&quot;: &quot;New test&quot;,
+    &quot;url&quot;: &quot;/biocides/new.html&quot;,
+    &quot;pluginType&quot;: &quot;eleventy-navigation&quot;,
+    &quot;title&quot;: &quot;New test&quot;,
+    &quot;children&quot;: []
+  }
+]
+</code>
+</pre><p>parent: biocidesindex</p><p>pageIdentifier: test</p><p>page.url: /test/</p><nav><ul><li><a href="../biocides/pic/index">PIC</a></li></ul></nav><h1>Test</h1><nav><ul><li><a href="/search/">Search</a></li></ul></nav></body></html>
