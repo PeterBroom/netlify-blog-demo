@@ -106,7 +106,6 @@ collections:
     slug: "{{slug}}"
     identifier_field: name
     preview_path: "{{fields.permalink}}"
-    # permalink: "{{ page.filePathStem }}.html"
     editor:
       preview: false
     fields:
@@ -123,17 +122,6 @@ collections:
           required: true,
           default: "{{ page.filePathStem }}.html",
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
-        }
-      - {
-          label: "Category",
-          name: category,
-          widget: relation,
-          required: true,
-          multiple: false,
-          collection: options.categories,
-          valueField: "{{categoryName}}",
-          searchFields: ["categoryName", "categorySlug"],
-          displayFields: ["categoryName"],
         }
       - {
           label: "Parent page",
