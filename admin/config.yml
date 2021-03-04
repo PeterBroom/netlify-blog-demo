@@ -163,31 +163,8 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - {
-              label: "Parent",
               widget: relation,
-              name: parent_relation,
-              required: false,
-              multiple: false,
-              collection: pages,
-              valueField: "{{slug}}",
-              searchFields: ["title"],
-              displayFields: ["title"],
-            }
-          - { label: "Order", name: "order", widget: "number", default: 0 }
-          - {
-              widget: relation,
-              name: child_relation,
-              label: "Child pages",
-              required: false,
-              multiple: true,
-              collection: pages,
-              valueField: "{{slug}}",
-              searchFields: ["title"],
-              displayFields: ["title"],
-            }
-          - {
-              widget: relation,
-              name: parent_relation,
+              name: parent,
               label: "Parent page",
               required: false,
               multiple: false,
@@ -196,6 +173,7 @@ collections:
               searchFields: ["title"],
               displayFields: ["title"],
             }
+          - { label: "Order", name: "order", widget: "number", default: 0 }
       - {
           label: "Meta description",
           name: "metaDescription",
