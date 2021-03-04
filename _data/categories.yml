@@ -3,3 +3,5 @@ categoryItems:
     categorySlug: biocides
   - categoryName: "Pesticides "
     categorySlug: pesticides
+  - categoryName: REACH
+    categorySlug: reach
