@@ -1,6 +1,17 @@
 <h2>Sub nav</h2>
-{{ parent | dump }}
-{% set subPages = collections.pages | eleventyNavigation(parent) %}
+
+{% if parent == page.fileSlug %}
+    {% set find = page.fileSlug | capitalize %}
+    <p>has no parent id</p>
+{% else %}
+    {% set find = parent %}
+    <p>has a parent id</p>
+{% endif %}
+
+<p>fileSlug: {{ page.fileSlug }}</p>
+<p>FIND: {{ parent }}</p>
+
+{% set subPages = collections.pages | eleventyNavigation(find) %}
 <ul>
     {% for page in subPages %}
         <li>
