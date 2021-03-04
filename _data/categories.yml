@@ -1,5 +1,7 @@
 categoryItems:
-  - categoryName: Biocides
+  - categoryName: "Biocides "
     categorySlug: biocides
-  - categoryName: Pesticides
+  - categoryName: "Pesticides "
     categorySlug: pesticides
+  - categoryName: REACH
+    categorySlug: reach
