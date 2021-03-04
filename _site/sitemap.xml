@@ -59,7 +59,7 @@
     
         
             <url>
-                <loc>/test/</loc>
+                <loc>/biocides/momomomo/</loc>
                 <lastmod>2021-03-02T17:33:56.133Z</lastmod>
                 <changefreq>monthly</changefreq>
             </url>
@@ -85,6 +85,22 @@
             <url>
                 <loc>/biocides/new.html</loc>
                 <lastmod>2021-03-03T19:05:54.316Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>/pesticides/</loc>
+                <lastmod>2021-03-04T12:57:24.941Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>/pesticides/new.html</loc>
+                <lastmod>2021-03-04T12:58:31.204Z</lastmod>
                 <changefreq>monthly</changefreq>
             </url>
         
