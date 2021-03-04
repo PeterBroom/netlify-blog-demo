@@ -120,7 +120,7 @@ collections:
           name: "permalink",
           widget: "string",
           required: true,
-          default: { { page.filePathStem } },
+          # default: { { page.filePathStem } },
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
       - {
