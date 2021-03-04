@@ -142,9 +142,9 @@ collections:
           required: true,
           multiple: false,
           collection: options.categories,
-          valueField: "{{title}}",
-          searchFields: ["title", "slug"],
-          displayFields: ["title"],
+          valueField: "{{categoryName}}",
+          searchFields: ["categoryName", "categorySlug"],
+          displayFields: ["categoryName"],
         }
       - {
           label: "Parent page",
