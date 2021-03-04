@@ -141,7 +141,7 @@ collections:
           widget: relation,
           required: true,
           multiple: false,
-          collection: categories,
+          collection: options.categories,
           valueField: "{{title}}",
           searchFields: ["title", "slug"],
           displayFields: ["title"],
