@@ -1,4 +1,5 @@
 <h2>Sub nav</h2>
+{{ parent | dump }}
 {% set subPages = collections.pages | eleventyNavigation(parent) %}
 <ul>
     {% for page in subPages %}
