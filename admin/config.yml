@@ -170,17 +170,6 @@ collections:
         widget: "object"
         fields:
           - { label: "Key", name: "key", widget: "string" }
-          - {
-              widget: relation,
-              name: parent,
-              label: "Parent page",
-              required: false,
-              multiple: false,
-              collection: pages,
-              valueField: "{{title}}",
-              searchFields: ["title"],
-              displayFields: ["title"],
-            }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - {
           label: "Meta description",
