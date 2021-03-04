@@ -8,9 +8,8 @@ blocks:
     heading: Eat the rich!
     content: asfdasdfasdfasdfdasf
 eleventyNavigation:
-  order: 0
+  order: 1
   key: PIC
-  parent: biocides/index
 metaDescription: adsfasdfasdfasfasdfasdfas
 metaKeywords: asdfasdfasdfasf
 ---

@@ -1,32 +1,11 @@
-{% set navTitle = subMenu.navItems.navtitle %}
-{% set subNav = subMenu.navItems %}
-{% set pageIdentifier = page.fileSlug %}
-<pre>
-<code>
-{% set navPages = collections.all | eleventyNavigation %}
-
-{# {{ page | dump(2)}} #}
-{{navPages | dump(2) }}
-</code>
-</pre>
-{% for item in subNav %}
-
-</code>
-</pre>
-{% set parent = item.parent_relation %}
-<p>parent: {{ parent  | slug }}</p>
-<p>pageIdentifier: {{ pageIdentifier  }}</p>
-<p>page.url: {{ page.url  }}</p>
-</code>
-</pre>
-<nav>
+<h2>Sub nav</h2>
+{% set subPages = collections.pages | eleventyNavigation(parent) %}
 <ul>
-{% for link in item.navItem.link %}
-
-<li>
-    <a href="../{{ link.url | url }}"{% if link.url == page.url %} data-current="current item"{% endif %}>{{ link.displayText }}</a>
-</li>
-{% endfor %}
+    {% for page in subPages %}
+        <li>
+            <a href="{{ page.url | url }}">
+                {{ page.title }}
+            </a>
+        </li>
+    {% endfor %}
 </ul>
-</nav>
-{% endfor %}

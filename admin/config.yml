@@ -33,66 +33,66 @@ collections:
             fields:
               - { label: "Display Text", name: displayText, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "Submenus"
-        name: subMenu
-        file: "_data/subMenu.yml"
-        fields:
-          - label: "Nav Items"
-            label_singular: "Nav Item"
-            name: navItems
-            widget: list
-            summary: "{{fields.navtitle}}"
-            collapsed: true
-            types:
-              - label: "Navigation List"
-                name: navList
-                widget: list
-                fields:
-                  - label: "Navigation Title"
-                    name: "navtitle"
-                    widget: string
-                  - {
-                      label: "Parent page",
-                      widget: relation,
-                      name: parent_relation,
-                      required: true,
-                      multiple: false,
-                      collection: pages,
-                      valueField: "{{slug}}",
-                      searchFields: ["title"],
-                      displayFields: ["title"],
-                    }
-                  - label: "Navigation item"
-                    name: navItem
-                    widget: object
-                    fields:
-                      - label: "Add a Link"
-                        name: link
-                        widget: list
-                        summary: "{{fields.displayText}}"
-                        collapsed: true
-                        types:
-                          - label: "Link"
-                            name: linkObject
-                            widget: object
-                            fields:
-                              - {
-                                  label: "Display Text",
-                                  name: displayText,
-                                  widget: string,
-                                  required: true,
-                                }
-                              - {
-                                  label: "page",
-                                  widget: relation,
-                                  name: url,
-                                  required: true,
-                                  multiple: false,
-                                  collection: pages,
-                                  valueField: "{{slug}}",
-                                  searchFields: ["title"],
-                                  displayFields: ["title"],
-                                }
+      # - label: "Submenus"
+      #   name: subMenu
+      #   file: "_data/subMenu.yml"
+      #   fields:
+      #     - label: "Nav Items"
+      #       label_singular: "Nav Item"
+      #       name: navItems
+      #       widget: list
+      #       summary: "{{fields.navtitle}}"
+      #       collapsed: true
+      #       types:
+      #         - label: "Navigation List"
+      #           name: navList
+      #           widget: list
+      #           fields:
+      #             - label: "Navigation Title"
+      #               name: "navtitle"
+      #               widget: string
+      #             - {
+      #                 label: "Parent page",
+      #                 widget: relation,
+      #                 name: parent_relation,
+      #                 required: true,
+      #                 multiple: false,
+      #                 collection: pages,
+      #                 valueField: "{{slug}}",
+      #                 searchFields: ["title"],
+      #                 displayFields: ["title"],
+      #               }
+      #             - label: "Navigation item"
+      #               name: navItem
+      #               widget: object
+      #               fields:
+      #                 - label: "Add a Link"
+      #                   name: link
+      #                   widget: list
+      #                   summary: "{{fields.displayText}}"
+      #                   collapsed: true
+      #                   types:
+      #                     - label: "Link"
+      #                       name: linkObject
+      #                       widget: object
+      #                       fields:
+      #                         - {
+      #                             label: "Display Text",
+      #                             name: displayText,
+      #                             widget: string,
+      #                             required: true,
+      #                           }
+      #                         - {
+      #                             label: "page",
+      #                             widget: relation,
+      #                             name: url,
+      #                             required: true,
+      #                             multiple: false,
+      #                             collection: pages,
+      #                             valueField: "{{slug}}",
+      #                             searchFields: ["title"],
+      #                             displayFields: ["title"],
+      #                           }
 
   - name: pages
     label: Pages
@@ -121,13 +121,7 @@ collections:
           name: "permalink",
           widget: "string",
           required: true,
-          # valueField: "{{ page.filePathStem }}.html",
           default: "{{ page.filePathStem }}.html",
-          # pattern:
-          #   [
-          #     "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-          #     "A slug can have no spaces or special characters",
-          #   ],
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
       - { label: "Title", name: "title", widget: "string", required: true }

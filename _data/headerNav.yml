@@ -5,3 +5,6 @@ topLevelItems:
   - displayText: About us
     url: /about/
     itemType: Link
+  - displayText: Biocides
+    url: /biocides/
+    itemType: Link
