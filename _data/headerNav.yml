@@ -8,3 +8,6 @@ topLevelItems:
   - displayText: Biocides
     url: /biocides/
     itemType: Link
+  - displayText: Pesticides
+    url: /pesticides/
+    itemType: Link
