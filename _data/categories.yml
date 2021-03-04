@@ -1,0 +1,5 @@
+categoryItems:
+  - categoryName: Biocides
+    categorySlug: biocides
+  - categoryName: Pesticides
+    categorySlug: pesticides
