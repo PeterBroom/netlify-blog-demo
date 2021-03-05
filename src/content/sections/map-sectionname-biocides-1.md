@@ -1,3 +1,4 @@
 ---
 sectionName: "Biocides "
+sectionSlug: /biocides/
 ---
