@@ -160,11 +160,23 @@ collections:
       #                             searchFields: ["title"],
       #                             displayFields: ["title"],
       #                           }
+  - name: "list"
+    label: "List"
+    folder: "src/content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "list-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+    editor: false
   - name: pages
     label: Pages
     title: Page
     label_singular: "Page"
-    folder: src/content/pages
+    file: src/content/pages/index.md
     create: true
     nested:
       depth: 6 # max depth to show in the collection tree
@@ -174,6 +186,7 @@ collections:
     editor:
       preview: false
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lists-page"}
       - {
           label: "Layout",
           name: "layout",
@@ -192,10 +205,10 @@ collections:
           label: "Category",
           name: Category,
           widget: relation,
-          collection: categories,
+          collection: relation_files,
           required: false,
           multiple: false,
-          # file: "categories",
+          file: "_data/categories",
           valueField: "{{categories.*.categoryName}}",
           searchFields: ["categories.*.categoryName", "categories.*.categoryUrl"],
           displayFields: ["categories.*.categoryName"],
