@@ -10,3 +10,10 @@ eleventyComputed:
 <h1>{{ title }}</h1>
 
 {% include "layouts/blocks.njk" %}
+
+<h2>Related content</h2>
+<ul>
+  {% for content in relatedContent %}
+    <li>{{ content }}</li>
+  {% endfor %}
+</ul>
