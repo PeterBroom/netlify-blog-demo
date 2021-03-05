@@ -180,6 +180,8 @@ collections:
     label_singular: "Page"
     files:
       - file: src/content/pages/index.md
+        label: "Page lists"
+        name: "pageLists"
         create: true
         nested:
           depth: 6 # max depth to show in the collection tree
