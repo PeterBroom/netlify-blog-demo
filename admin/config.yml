@@ -133,10 +133,12 @@ collections:
           # default: { { page.filePathStem } },
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
-        - name: categories
-          label: Categories
-          widget: categories
+      - {
+          label: Categories,
+          name: categories,
+          widget: categories,
           separator: __
+        }
       # - { label: "Categories", name: "category", widget: "string", default: {{ meta.path }} }
       # - {
       #     label: "Categories",
