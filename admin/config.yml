@@ -6,7 +6,6 @@ publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
-    sortable_fields: ["pages"]
   - label: "Sitewide Options"
     name: options
     editor:
