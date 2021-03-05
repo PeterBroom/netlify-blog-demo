@@ -155,6 +155,13 @@ collections:
           widget: "string",
           required: true,
         }
+      - {
+          label: "Slug",
+          name: "sectionSlug",
+          widget: "hidden",
+          default: {{fields.sectionName}},
+          required: true,
+        }
 
   - name: pages
     label: Pages
