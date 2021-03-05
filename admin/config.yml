@@ -1,13 +1,13 @@
 backend:
   name: git-gateway
   branch: main
-  # commit_messages:
-  #   create: Create {{collection}} “{{slug}}”
-  #   update: Update {{collection}} “{{slug}}”
-  #   delete: Delete {{collection}} “{{slug}}”
-  #   uploadMedia: Upload “{{path}}”
-  #   deleteMedia: Delete “{{path}}”
-  #   openAuthoring: '{{message}}'
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
 local_backend: true
 publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
@@ -15,25 +15,25 @@ public_folder: "/images/uploads"
 collections:
   - label: "Sitewide Options"
     name: options
-    title: 'Sitewide Options'
-    label_singular: "Options"
-    folder: src/content/options
-    slug: "options"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string", required: true }
+    # title: 'Sitewide Options'
+    # label_singular: "Options"
+    # folder: src/content/options
+    # slug: "options"
+    # editor:
+    #   preview: false
+    # fields:
+    #   - { label: "Title", name: "title", widget: "string", required: true }
 
-      # - {
-      #   label: "Meta keywords",
-      #   name: "siteMetaKeywords",
-      #   widget: list,
-      #   add_to_top: true,
-      #   minimize_collapsed: true,
-      #   required: true,
-      #   summary: '{{fields.name}}',
-      #   field: {label: Name, name: name, widget: string}
-      # }
+    #   # - {
+    #   #   label: "Meta keywords",
+    #   #   name: "siteMetaKeywords",
+    #   #   widget: list,
+    #   #   add_to_top: true,
+    #   #   minimize_collapsed: true,
+    #   #   required: true,
+    #   #   summary: '{{fields.name}}',
+    #   #   field: {label: Name, name: name, widget: string}
+    #   # }
     files:
       - label: "Navigation Menu"
         name: headerNav
