@@ -133,12 +133,6 @@ collections:
           # default: { { page.filePathStem } },
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
-      - {
-          label: Categories,
-          name: categories,
-          widget: categories,
-          separator: __
-        }
       # - { label: "Categories", name: "category", widget: "string", default: {{ meta.path }} }
       # - {
       #     label: "Categories",
@@ -218,8 +212,8 @@ collections:
       - {
           label: "Meta keywords",
           name: "metaKeywords",
-          widget: "string",
-          pattern: [".{3,}", "Must have at least 12 characters"],
+          widget: "list",
+          field: { label: tag, name: tag, widget: string }
         }
     meta:
       {
