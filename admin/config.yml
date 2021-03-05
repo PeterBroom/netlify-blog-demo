@@ -21,13 +21,14 @@ collections:
         file: "_data/headerMeta.yml"
         fields:
           - label: "Meta keywords"
-            name: "siteMetaKeywords"
+            name: "keywords"
             widget: list
             add_to_top: true
             minimize_collapsed: true
             required: true
             summary: '{{fields.name}}'
             field: {label: Name, name: name, widget: string}
+          - label: "description", name: "description", widget: text
       - label: "Navigation Menu"
         name: headerNav
         file: "_data/headerNav.yml"

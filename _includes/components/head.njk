@@ -1,15 +1,15 @@
 {# set meta keywords #}
 {% if metaKeywords %}
-    {% set keywords = 'default keywords' + ', ' + metaKeywords | join(", ") %}
+    {% set keywords = headerMeta.siteMetaKeywords | join(', ') + ', ' + metaKeywords | join(', ') %}
 {% else %}
-    {% set keywords = 'default keywords' %}
+    {% set keywords = headerMeta.siteMetaKeywords | join(', ') %}
 {% endif %}
 
 {# set meta description #}
 {% if metaDescription %}
     {% set description = metaDescription %}
 {% else %}
-    {% set description = 'default description' %}
+    {% set description = headerMeta.description %}
 {% endif %}
 
 <meta charset="utf-8">
