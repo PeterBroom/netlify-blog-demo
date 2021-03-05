@@ -33,17 +33,17 @@ collections:
             fields:
               - { label: "Display Text", name: displayText, widget: string }
               - { label: URL, name: url, widget: string }
-        - label: "Categories"
-          name: categories
-          file: "_data/categories.yml"
-          fields:
-            - label: "Category"
-              label_singular: "Category"
-              name: categoryitems
-              widget: list
-              fields:
-                - { label: "Category", name: categoryText, widget: string }
-                - { label: Category Slug, name: categorySlug, widget: string }
+      # - label: "Categories"
+      #   name: categories
+      #   file: "_data/categories.yml"
+      #   fields:
+      #     - label: "Category"
+      #       label_singular: "Category"
+      #       name: categoryitems
+      #       widget: list
+      #       fields:
+      #         - { label: "Category", name: categoryText, widget: string }
+      #         - { label: Category Slug, name: categorySlug, widget: string }
       # - label: "Submenus"
       #   name: subMenu
       #   file: "_data/subMenu.yml"
@@ -104,7 +104,6 @@ collections:
       #                             searchFields: ["title"],
       #                             displayFields: ["title"],
       #                           }
-
   - name: pages
     label: Pages
     title: Page
