@@ -39,6 +39,8 @@ collections:
               widget: relation
               required: false
               multiple: false
+              add_to_top: true
+              minimize_collapsed: true
               collection: pages
               valueField: "{{title}}"
               searchFields: ["title", "slug"]
