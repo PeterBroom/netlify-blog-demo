@@ -17,6 +17,7 @@ collections:
     name: options
     editor:
       preview: false
+    fields:
     - {
         label: "Meta keywords",
         name: "siteMetaKeywords",
