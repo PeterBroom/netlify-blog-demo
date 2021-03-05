@@ -34,7 +34,9 @@ collections:
             name: categories
             widget: list
             fields:
-            - label: "Category Name", name: "categoryName", widget: text
+            - label: "Category Name"
+              name: "categoryName"
+              widget: text
             - label: "Category URL"
               name: category
               widget: relation
