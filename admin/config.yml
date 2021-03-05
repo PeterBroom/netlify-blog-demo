@@ -31,15 +31,14 @@ collections:
             file: "_data/categories.yml"
             fields:
               - label: "Category Name"
-                name: "keywords"
-                widget: list
-                add_to_top: true
-                minimize_collapsed: true
-                required: true
-                summary: '{{fields.name}}'
-                # hint: "Use generic terms for keywords searches. These keywords will also appear across all pages.",
-                field: {label: Name, name: name, widget: string}
-
+                name: category
+                widget: relation
+                required: false
+                multiple: false
+                collection: pages
+                valueField: "{{title}}"
+                searchFields: ["title", "slug"]
+                displayFields: ["title"]
       - label: "Meta data"
         name: headerMeta
         file: "_data/headerMeta.yml"
