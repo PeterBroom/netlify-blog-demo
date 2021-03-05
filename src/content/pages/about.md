@@ -1,12 +1,16 @@
 ---
 permalink: /about/index.html
 parent: Home
-title: About us
-date: 2017-01-01T00:00:00.000Z
 relatedContent:
   - biocides/pic/index
   - biocides/test-page/index
   - pesticides/index
+title: About us
+date: 2017-01-01T00:00:00.000Z
+url:
+  - biocides/momomomo/index
+  - keywords/index
+  - biocides/pic/index
 eleventyNavigation:
   key: About
   order: 1
