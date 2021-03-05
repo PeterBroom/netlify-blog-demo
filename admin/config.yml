@@ -28,9 +28,10 @@ collections:
             required: true
             summary: '{{fields.name}}'
             field: {label: Name, name: name, widget: string}
-          - label: "description"
+          - label: "Meta description"
             name: "description"
-            widget: text
+            field: {label: Name, name: name, widget: text}
+
       - label: "Navigation Menu"
         name: headerNav
         file: "_data/headerNav.yml"
