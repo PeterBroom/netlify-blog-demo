@@ -1,6 +1,7 @@
 ---
-permalink: /about/index.html
+Section: Biocides
 parent: Home
+permalink: /about/index.html
 relatedContent:
   - biocides/pic/index
   - biocides/test-page/index
