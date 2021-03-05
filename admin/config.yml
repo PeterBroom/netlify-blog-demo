@@ -194,7 +194,7 @@ collections:
           widget: relation,
           required: false,
           multiple: false,
-          collection: categories,
+          collection: relation_files,
           file: "_data/categories.yml",
           valueField: "{{categories.*.categoryName}}",
           searchFields: ["categories.*.categoryName", "categories.*.categoryUrl"],
