@@ -1,7 +1,8 @@
 ---
+Section: Pesticides
+parent: Home
 layout: layouts/page.njk
 permalink: /keywords.html
-parent: Home
 title: Keywords
 date: 2021-03-05T11:57:05.436Z
 eleventyNavigation:
@@ -10,6 +11,9 @@ eleventyNavigation:
 metaDescription: sadfkj asdlakfjasldkfj laksdjfkljasdf ljasdflkajsdf
   l;jasdflkasdfkjadsf kjhsadfkjhasdfjhads kjasdhf
 metaKeywords:
+  - good
+  - And another word
+  - Another words
   - keywords
   - hse
   - government
