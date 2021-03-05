@@ -33,6 +33,16 @@ collections:
             fields:
               - { label: "Display Text", name: displayText, widget: string }
               - { label: URL, name: url, widget: string }
+      - label: "Categories"
+        name: categories
+        fields:
+          - label: "Category"
+            label_singular: "Category"
+            name: categoryitems
+            widget: list
+            fields:
+              - { label: "Category", name: categoryText, widget: string }
+              - { label: Category Slug, name: categorySlug, widget: string }
       # - label: "Submenus"
       #   name: subMenu
       #   file: "_data/subMenu.yml"
@@ -122,6 +132,17 @@ collections:
           required: true,
           # default: { { page.filePathStem } },
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
+        }
+      - {
+          label: "Categories",
+          name: Category,
+          widget: relation,
+          required: false,
+          multiple: false,
+          collection: categories,
+          valueField: "{{categoryTitle}}",
+          searchFields: ["categoryTitle", "categorySlug"],
+          displayFields: ["categoryTitle"],
         }
       - {
           label: "Parent page",

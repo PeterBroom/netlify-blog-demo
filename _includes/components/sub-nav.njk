@@ -1,17 +1,32 @@
 <h2>Sub nav</h2>
-{% if eleventyNavigation.key == page.fileSlug | capitalize %}
+{% if eleventyNavigation.parent == page.fileSlug | capitalize %}
     {% set find = page.fileSlug | capitalize %}
 {% else %}
     {% set find = parent %}
 {% endif %}
 
-{% set subPages = collections.pages | eleventyNavigation(find) %}
-<ul>
-    {% for page in subPages %}
-        <li>
-            <a href="{{ page.url | url }}">
-                {{ page.title }}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+{% set levelOne = collections.pages | eleventyNavigation(find) %}
+<nav>
+    <ul>
+        {% for page in levelOne %}
+            <li>
+                <a href="{{ page.url | url }}">
+                    {{ page.title }}
+                </a>
+                <p>sub parent {{ page.parent }}</p>
+                {% set levelTwo = page.children %}
+                {# {% if levelTwo %} #}
+                <ul>
+                    {% for page in levelTwo %}
+                        <li>
+                            <a href="{{ page.url | url }}">
+                                {{ page.title }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                {# {% endif %} #}
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
