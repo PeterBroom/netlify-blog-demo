@@ -1,8 +1,8 @@
 ---
 templateKey: section-page
-title: Biocides
+title: New section
 description: This is the biocdes site
 tags:
-  - biocides
+  - new-section
 ---
 asdfasdfasdfasdfasdfsda
