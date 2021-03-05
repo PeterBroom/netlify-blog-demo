@@ -17,14 +17,16 @@ collections:
     name: options
     editor:
       preview: false
-    label: "Meta keywords",
-    name: "siteMetaKeywords",
-    widget: list,
-    add_to_top: true,
-    minimize_collapsed: true,
-    required: true,
-    summary: '{{fields.name}}',
-    field: {label: Name, name: name, widget: string}
+    - {
+        label: "Meta keywords",
+        name: "siteMetaKeywords",
+        widget: list,
+        add_to_top: true,
+        minimize_collapsed: true,
+        required: true,
+        summary: '{{fields.name}}',
+        field: {label: Name, name: name, widget: string}
+      }
     files:
       - label: "Navigation Menu"
         name: headerNav
