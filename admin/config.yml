@@ -26,6 +26,19 @@ collections:
           - label: "Tagline"
             name: "tagline"
             field: {label: Name, name: name, widget: string}
+          - label: "Categories"
+            name: "category"
+            file: "_data/categories.yml"
+            fields:
+              - label: "Category Name"
+                name: "keywords"
+                widget: list
+                add_to_top: true
+                minimize_collapsed: true
+                required: true
+                summary: '{{fields.name}}'
+                # hint: "Use generic terms for keywords searches. These keywords will also appear across all pages.",
+                field: {label: Name, name: name, widget: string}
 
       - label: "Meta data"
         name: headerMeta
