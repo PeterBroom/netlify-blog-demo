@@ -220,7 +220,7 @@ collections:
           label: "Meta keywords",
           name: "metaKeywords",
           widget: "list",
-          allow_add: true
+          allow_add: true,
           field: { label: tag, name: tag, widget: string }
         }
     meta:
