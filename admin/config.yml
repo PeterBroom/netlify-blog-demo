@@ -1,6 +1,13 @@
 backend:
   name: git-gateway
   branch: main
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
 local_backend: true
 publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
@@ -213,6 +220,7 @@ collections:
           label: "Meta keywords",
           name: "metaKeywords",
           widget: "list",
+          allow_add: true
           field: { label: tag, name: tag, widget: string }
         }
     meta:
