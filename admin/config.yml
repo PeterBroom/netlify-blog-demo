@@ -30,15 +30,17 @@ collections:
             name: "category"
             file: "_data/categories.yml"
             fields:
-              - label: "Category Name"
-                name: category
-                widget: relation
-                required: false
-                multiple: false
-                collection: pages
-                valueField: "{{title}}"
-                searchFields: ["title", "slug"]
+              - {
+                label: "Category Name",
+                name: category,
+                widget: relation,
+                required: false,
+                multiple: false,
+                collection: pages,
+                valueField: "{{title}}",
+                searchFields: ["title", "slug"],
                 displayFields: ["title"]
+              }
       - label: "Meta data"
         name: headerMeta
         file: "_data/headerMeta.yml"
