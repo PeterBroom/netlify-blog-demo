@@ -1,8 +1,13 @@
 ---
 permalink: /about/index.html
-title: About us
 parent: Home
+title: About us
 date: 2017-01-01T00:00:00.000Z
+relatedContent:
+  - Biocides
+  - Yipyipyipyip!
+  - Pesticides
+  - "New test page for pests "
 eleventyNavigation:
   key: About
   order: 1
