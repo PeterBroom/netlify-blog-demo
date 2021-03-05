@@ -220,13 +220,11 @@ collections:
           label: "Meta keywords",
           name: "metaKeywords",
           widget: list,
-          # default: ["HSE"],
-          allow_add: true,
+          default: ["HSE"],
+          # allow_add: true,
           required: true,
           summary: '{{fields.name}}',
-          field:
-            - {label: Name, name: name, widget: string}
-          # field: { label: tag, name: tag, widget: string }
+          field: {label: Name, name: name, widget: string}
         }
     meta:
       {
