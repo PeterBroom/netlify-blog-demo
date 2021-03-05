@@ -38,7 +38,7 @@ collections:
               name: "categoryName"
               widget: string
             - label: "Category URL"
-              name: category
+              name: categoryUrl
               widget: relation
               required: false
               multiple: false
