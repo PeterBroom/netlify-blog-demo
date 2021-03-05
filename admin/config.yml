@@ -188,18 +188,17 @@ collections:
           default: "main/sub/index.html",
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
-      # - { label: "Categories", name: "category", widget: "string", default: {{ meta.path }} }
-      # - {
-      #     label: "Categories",
-      #     name: Category,
-      #     widget: relation,
-      #     required: false,
-      #     multiple: false,
-      #     collection: categories,
-      #     valueField: "{{categoryTitle}}",
-      #     searchFields: ["categoryTitle", "categorySlug"],
-      #     displayFields: ["categoryTitle"],
-      #   }
+      - {
+          label: "Categories",
+          name: Category,
+          widget: relation,
+          required: false,
+          multiple: false,
+          collection: categories,
+          valueField: "{{categoryName}}",
+          searchFields: ["categoryName", "categoryUrl"],
+          displayFields: ["categoryName"],
+        }
       - {
           label: "Parent page",
           name: parent,
