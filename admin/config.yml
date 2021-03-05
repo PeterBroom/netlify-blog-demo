@@ -196,9 +196,9 @@ collections:
           multiple: false,
           collection: categories,
           file: "_data/categories.yml",
-          valueField: "{{categories.categoryName}}",
-          searchFields: ["categories.categoryName", "categories.categoryUrl"],
-          displayFields: ["categories.categoryName"],
+          valueField: "{{categories.*.categoryName}}",
+          searchFields: ["categories.*.categoryName", "categories.*.categoryUrl"],
+          displayFields: ["categories.*.categoryName"],
         }
       - {
           label: "Parent page",
