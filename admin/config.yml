@@ -195,7 +195,7 @@ collections:
           collection: relation_files,
           required: false,
           multiple: false,
-          file: "_data/categories",
+          file: "categories",
           valueField: "{{categories.categoryName}}",
           searchFields: ["categories.categoryName", "categories.categoryUrl"],
           displayFields: ["categories.categoryName"],
