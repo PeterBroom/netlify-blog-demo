@@ -17,6 +17,8 @@ collections:
     name: options
     title: 'Sitewide Options'
     label_singular: "Options"
+    field: { label: "Title", name: "title", widget: "string", required: true }
+
     # folder: src/content/options
     # slug: "options"
     # editor:
