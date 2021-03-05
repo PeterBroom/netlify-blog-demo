@@ -1,5 +1,5 @@
 ---
-Section: Biocides
+Section: Pesticides
 parent: Home
 permalink: /about/index.html
 relatedContent:
