@@ -34,7 +34,8 @@ collections:
             name: categories
             widget: list
             fields:
-            - label: "Category Name"
+            - label: "Category Name", name: "categoryName", widget: text
+            - label: "Category URL"
               name: category
               widget: relation
               required: false
@@ -42,7 +43,7 @@ collections:
               add_to_top: true
               minimize_collapsed: true
               collection: pages
-              valueField: "{{title}}"
+              valueField: "{{slug}}"
               searchFields: ["title", "slug"]
               displayFields: ["title"]
       - label: "Meta data"
