@@ -6,6 +6,7 @@ publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
+    sortable_fields: ["pages"]
   - label: "Sitewide Options"
     name: options
     editor:
@@ -110,7 +111,6 @@ collections:
     label_singular: "Page"
     folder: src/content/pages
     create: true
-    sortable_fields: true
     nested:
       depth: 6 # max depth to show in the collection tree
       summary: "{{meta.path}}"
