@@ -2,3 +2,5 @@ topLevelItems:
   - displayText: Search
     url: /search/
     itemType: Link
+  - displayText: TEST
+    url: /test
