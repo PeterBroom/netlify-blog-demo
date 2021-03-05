@@ -213,15 +213,16 @@ collections:
       - {
           label: "Meta description",
           name: "metaDescription",
-          widget: "string",
-          pattern: [".{12,}", "Must have at least 12 characters"],
+          widget: "text",
+          required: true
         }
       - {
           label: "Meta keywords",
           name: "metaKeywords",
           widget: list,
           # default: ["HSE"],
-          allow_add: true,
+          # allow_add: true,
+          required: true
           # field: { label: tag, name: tag, widget: string }
         }
     meta:
