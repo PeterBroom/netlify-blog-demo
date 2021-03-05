@@ -158,7 +158,7 @@ collections:
       - {
           label: "Slug",
           name: "sectionSlug",
-          widget: "hidden",
+          widget: "string",
           default: {{fields.sectionName}},
           required: true,
         }
