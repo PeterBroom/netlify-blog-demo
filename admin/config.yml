@@ -133,7 +133,7 @@ collections:
           # default: { { page.filePathStem } },
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
-      - { label: "Categories", name: "category", widget: "string", default: {{ meta.path }} }
+      # - { label: "Categories", name: "category", widget: "string", default: {{ meta.path }} }
       # - {
       #     label: "Categories",
       #     name: Category,
@@ -186,6 +186,17 @@ collections:
                   required: false,
                 }
               - { label: "Content", name: content, widget: markdown }
+      - {
+          label: "Related content",
+          name: relatedContent,
+          widget: relation,
+          required: false,
+          multiple: true,
+          collection: pages,
+          valueField: "{{title}}",
+          searchFields: ["title"],
+          displayFields: ["title"],
+        }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
         widget: "object"
