@@ -36,7 +36,7 @@ collections:
             fields:
             - label: "Category Name"
               name: "categoryName"
-              widget: text
+              widget: string
             - label: "Category URL"
               name: category
               widget: relation
