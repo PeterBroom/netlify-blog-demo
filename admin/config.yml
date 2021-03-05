@@ -26,28 +26,6 @@ collections:
           - label: "Tagline"
             name: "tagline"
             field: {label: Name, name: name, widget: string}
-      - label: "Categories"
-        name: category
-        file: "_data/categories.yml"
-        fields:
-          - label: "Categories"
-            name: categories
-            widget: list
-            fields:
-            - label: "Category Name"
-              name: "categoryName"
-              widget: string
-            - label: "Category URL"
-              name: categoryUrl
-              widget: relation
-              required: false
-              multiple: false
-              add_to_top: true
-              minimize_collapsed: true
-              collection: pages
-              valueField: "{{slug}}"
-              searchFields: ["title", "slug"]
-              displayFields: ["title"]
       - label: "Meta data"
         name: headerMeta
         file: "_data/headerMeta.yml"
@@ -161,12 +139,13 @@ collections:
       #                             displayFields: ["title"],
       #                           }
   - name: sections
-    label: Section
+    label: Sections
     label_singular: "Section"
     title: Sections
     folder: src/content/sections
     create: true
     identifier_field: name
+    summary: '{{fields.sectionName}}'
     editor:
       preview: false
     fields:
@@ -206,8 +185,8 @@ collections:
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
       - {
-          label: "Category",
-          name: Category,
+          label: "Section",
+          name: Section,
           widget: relation,
           collection: sections,
           required: false,
