@@ -189,13 +189,13 @@ collections:
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
       - {
-          label: "Categories",
+          label: "Category",
           name: Category,
           widget: relation,
+          collection: relation_files,
           required: false,
           multiple: false,
-          collection: relation_files,
-          file: "_data/categories.yml",
+          file: "_data/categories",
           valueField: "{{categories.categoryName}}",
           searchFields: ["categories.categoryName", "categories.categoryUrl"],
           displayFields: ["categories.categoryName"],
