@@ -1,4 +1,4 @@
 ---
-sectionName: "Biocides "
+sectionName: "Biocides"
 sectionSlug: /biocides/
 ---

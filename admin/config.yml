@@ -198,7 +198,7 @@ collections:
           collection: sections,
           required: false,
           multiple: false,
-          valueField: "{{sectionName}}",
+          valueField: "{{sectionSlug}}",
           searchFields: ["sectionName"],
           displayFields: ["sectionName"],
         }
