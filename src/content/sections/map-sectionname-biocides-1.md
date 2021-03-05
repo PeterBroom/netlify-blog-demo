@@ -1,3 +1,3 @@
 ---
-sectionName: Biocides
+sectionName: "Biocides "
 ---
