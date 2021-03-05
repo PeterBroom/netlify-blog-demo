@@ -10,6 +10,8 @@ eleventyNavigation:
 metaDescription: sadfkj asdlakfjasldkfj laksdjfkljasdf ljasdflkajsdf
   l;jasdflkasdfkjadsf kjhsadfkjhasdfjhads kjasdhf
 metaKeywords:
+  - And another word
+  - Another words
   - keywords
   - hse
   - government
