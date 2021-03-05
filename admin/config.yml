@@ -15,28 +15,19 @@ public_folder: "/images/uploads"
 collections:
   - label: "Sitewide Options"
     name: options
-    title: 'Sitewide Options'
-    label_singular: "Options"
-    field: { label: "Title", name: "title", widget: "string", required: true }
-
-    # folder: src/content/options
-    # slug: "options"
-    # editor:
-    #   preview: false
-    # fields:
-    #   - { label: "Title", name: "title", widget: "string", required: true }
-
-    #   # - {
-    #   #   label: "Meta keywords",
-    #   #   name: "siteMetaKeywords",
-    #   #   widget: list,
-    #   #   add_to_top: true,
-    #   #   minimize_collapsed: true,
-    #   #   required: true,
-    #   #   summary: '{{fields.name}}',
-    #   #   field: {label: Name, name: name, widget: string}
-    #   # }
     files:
+      - label: "Meta data"
+        name: headerMeta
+        file: "_data/headerMeta.yml"
+        fields:
+          - label: "Meta keywords",
+            name: "siteMetaKeywords",
+            widget: list,
+            add_to_top: true,
+            minimize_collapsed: true,
+            required: true,
+            summary: '{{fields.name}}',
+            field: {label: Name, name: name, widget: string}
       - label: "Navigation Menu"
         name: headerNav
         file: "_data/headerNav.yml"
