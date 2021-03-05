@@ -222,6 +222,7 @@ collections:
           widget: list,
           default: ["HSE"],
           add_to_top: true,
+          minimize_collapsed: true,
           required: true,
           summary: '{{fields.name}}',
           field: {label: Name, name: name, widget: string}
