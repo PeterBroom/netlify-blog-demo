@@ -32,7 +32,7 @@ collections:
         fields:
           - label: "Categories"
             name: categories
-            type: list
+            widget: list
             fields:
             - label: "Category Name"
               name: category
