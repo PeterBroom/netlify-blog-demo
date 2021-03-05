@@ -195,17 +195,6 @@ collections:
           searchFields: ["sectionName"],
           displayFields: ["sectionName"],
         }
-      - {
-          label: "Parent page",
-          name: parent,
-          widget: relation,
-          required: false,
-          multiple: false,
-          collection: pages,
-          valueField: "{{title}}",
-          searchFields: ["title", "slug"],
-          displayFields: ["title"],
-        }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Content Blocks"
