@@ -1,8 +1,8 @@
 {# set meta keywords #}
 {% if metaKeywords %}
-    {% set keywords = headerMeta.siteMetaKeywords | join(', ') + ', ' + metaKeywords | join(', ') %}
+    {% set keywords = headerMeta.siteMetaKeywords + ', ' + metaKeywords %}
 {% else %}
-    {% set keywords = headerMeta.siteMetaKeywords | join(', ') %}
+    {% set keywords = headerMeta.siteMetaKeywords %}
 {% endif %}
 
 {# set meta description #}
