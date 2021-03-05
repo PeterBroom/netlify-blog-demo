@@ -160,10 +160,27 @@ collections:
       #                             searchFields: ["title"],
       #                             displayFields: ["title"],
       #                           }
+  - name: sections
+    label: Section
+    label_singular: "Section"
+    title: Sections
+    folder: src/content/sections
+    create: true
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Name",
+          name: "sectionName",
+          widget: "string",
+          required: true,
+        }
+
   - name: pages
     label: Pages
-    title: Page
     label_singular: "Page"
+    title: Page
     folder: src/content/pages
     create: true
     nested:
@@ -192,13 +209,12 @@ collections:
           label: "Category",
           name: Category,
           widget: relation,
-          collection: relation_files,
+          collection: sections,
           required: false,
           multiple: false,
-          file: "_data/categories",
-          valueField: "{{categories.*.categoryName}}",
-          searchFields: ["categories.*.categoryName", "categories.*.categoryUrl"],
-          displayFields: ["categories.*.categoryName"],
+          valueField: "{{sectionName}}",
+          searchFields: ["sectionName"],
+          displayFields: ["sectionName"],
         }
       - {
           label: "Parent page",
