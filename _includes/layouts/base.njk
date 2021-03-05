@@ -1,5 +1,6 @@
 <html>
     <head>
+        {% include "components/meta-data.njk" %}
         <title>Eleventy + Netlify CMS Blog Example</title>
     </head>
     <body>
@@ -7,6 +8,5 @@
         {% include "components/sub-nav.njk" %}
         {{ content | safe }}
         {% include "components/footer-nav.njk" %}
-
     </body>
 </html>

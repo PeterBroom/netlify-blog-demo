@@ -13,7 +13,6 @@ eleventyNavigation:
   key: Home
   order: 0
 metaDescription: This is a description for the homepage. Secret work is yoyo
-metaKeywords: yoyo, home, tickle, tummus, health and safely
 ---
 # Welcome
 

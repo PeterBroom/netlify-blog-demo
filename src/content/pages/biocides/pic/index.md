@@ -12,5 +12,4 @@ eleventyNavigation:
   order: 1
   key: PIC
 metaDescription: adsfasdfasdfasfasdfasdfas
-metaKeywords: asdfasdfasdfasf
 ---

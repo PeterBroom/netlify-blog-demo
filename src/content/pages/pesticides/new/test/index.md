@@ -8,5 +8,4 @@ eleventyNavigation:
   order: 0
   key: TEST SUB SUB
 metaDescription: sadfasdfasdfasdfadsfsdfsadfasd
-metaKeywords: asdfasdf
 ---

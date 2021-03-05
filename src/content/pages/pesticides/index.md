@@ -7,5 +7,4 @@ eleventyNavigation:
   order: 0
   key: Pesticides
 metaDescription: asdfasdfasdfasdfasdfasdfasdfasdfadsf
-metaKeywords: asdfadsfadsfasdfasdfasdf
 ---

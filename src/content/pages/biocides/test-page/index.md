@@ -9,5 +9,4 @@ eleventyNavigation:
   key: TEST
   parent: Biocides
 metaDescription: asdfasdfasdfasdfadsfasdfadsf
-metaKeywords: asdfasdfasdfasdfadsf
 ---

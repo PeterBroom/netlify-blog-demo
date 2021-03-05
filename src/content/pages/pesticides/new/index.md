@@ -9,5 +9,4 @@ eleventyNavigation:
   key: New test page for pests
   parent: Pesticides
 metaDescription: asdfasdfasdfasdfasdfads
-metaKeywords: asdfsadf
 ---
