@@ -1,3 +1,5 @@
 categories:
-  - category: Biocides
-  - category: Pesticides
+  - category: biocides/index
+    categoryName: Biocides
+  - category: pesticides/index
+    categoryName: Pesticides
