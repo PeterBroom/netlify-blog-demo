@@ -33,6 +33,7 @@ collections:
         fields:
           - label: "Meta description"
             name: "description"
+            hint: "Use a generic description to describe the objective of this website",
             field: {label: Name, name: name, widget: text}
           - label: "Meta keywords"
             name: "keywords"
@@ -41,6 +42,7 @@ collections:
             minimize_collapsed: true
             required: true
             summary: '{{fields.name}}'
+            hint: "Use generic terms for keywords searches. These keywords will also appear across all pages.",
             field: {label: Name, name: name, widget: string}
 
       - label: "Navigation Menu"
@@ -220,7 +222,7 @@ collections:
               - { label: "Content", name: content, widget: markdown }
       - {
           label: "Related content",
-          name: relatedContent,
+          name: url,
           hint: "Link to other pages that relate to this content.",
           widget: relation,
           required: false,

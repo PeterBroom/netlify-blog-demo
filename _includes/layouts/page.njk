@@ -13,6 +13,7 @@ eleventyComputed:
 
 <h2>Related content</h2>
 <ul>
+  {{ relatedContent | dump }}
   {% for content in relatedContent %}
     <li>{{ content }}</li>
   {% endfor %}
