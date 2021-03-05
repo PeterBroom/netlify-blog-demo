@@ -1,3 +1,4 @@
 ---
 sectionName: Pesticides
+sectionSlug: /pesticides/
 ---
