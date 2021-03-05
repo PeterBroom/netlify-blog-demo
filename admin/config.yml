@@ -16,6 +16,16 @@ collections:
   - label: "Sitewide Options"
     name: options
     files:
+      - label: "Globals"
+        name: headerGlobals
+        file: "_data/headerGlobals.yml"
+        fields:
+          - label: "Site title"
+            name: "siteTitle"
+            field: {label: Name, name: name, widget: string}
+          - label: "Tagline"
+            name: "tagline"
+            field: {label: Name, name: name, widget: string}
       - label: "Meta data"
         name: headerMeta
         file: "_data/headerMeta.yml"
@@ -31,7 +41,6 @@ collections:
           - label: "Meta description"
             name: "description"
             field: {label: Name, name: name, widget: text}
-
       - label: "Navigation Menu"
         name: headerNav
         file: "_data/headerNav.yml"
