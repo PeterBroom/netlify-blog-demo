@@ -1,10 +1,11 @@
 ---
 layout: layouts/page.njk
-permalink: /pesticdes/index.html
+permalink: /pesticides/index.html
 title: Pesticdes
 date: 2021-03-06T11:46:08.657Z
 eleventyNavigation:
   order: 0
   key: "Pesticdes "
+  url: home
 metaDescription: asdfasdfasdfadsfasdfasdfasdfasdfasdf
 ---
