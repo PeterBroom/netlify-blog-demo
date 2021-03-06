@@ -1,6 +1,5 @@
-fields:
-  - {
-    label: "Class names",
-    name: classNames,
-    widget: string
-  }
+- {
+  label: "Class names",
+  name: classNames,
+  widget: string
+}
