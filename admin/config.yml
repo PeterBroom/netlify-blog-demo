@@ -214,7 +214,7 @@ collections:
             widget: object
             fields:
               - {
-                  - !include include.d/componentDecorator.yml
+                  - !include componentDecorator.yml
                 }
               - { label: "Heading", name: heading, widget: string }
               - {
@@ -229,7 +229,7 @@ collections:
             widget: object
             fields:
               - {
-                - !include include.d/componentDecorator.yml
+                - !include componentDecorator.yml
               }
               - {
                   label: "Heading",
