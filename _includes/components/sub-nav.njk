@@ -5,6 +5,10 @@
     {% set find = parent %}
 {% endif %}
 
+<pre>
+<code>{{eleventyNavigation | dump}}</code>
+</pre>
+
 {% set levelOne = collections.pages | eleventyNavigation(find) %}
 <nav>
     <ul>

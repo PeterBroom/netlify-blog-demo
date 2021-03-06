@@ -243,7 +243,7 @@ collections:
           - {
             label: "Parent key",
             widget: relation,
-            name: url,
+            name: parentKey,
             required: true,
             multiple: false,
             collection: pages,
