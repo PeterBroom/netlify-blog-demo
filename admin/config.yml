@@ -191,17 +191,6 @@ collections:
           default: "main/sub/index.html",
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
-      # - {
-      #     label: "Section",
-      #     name: Section,
-      #     widget: relation,
-      #     collection: sections,
-      #     required: false,
-      #     multiple: false,
-      #     valueField: "{{sectionName}}",
-      #     searchFields: ["sectionName"],
-      #     displayFields: ["sectionName"],
-      #   }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Content Blocks"
@@ -251,7 +240,17 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-          - { label: "Slug", name: "slug", widget: "string", default: {{meta.path}} }
+          - {
+            label: "Parent key",
+            widget: relation,
+            name: url,
+            required: true,
+            multiple: false,
+            collection: pages,
+            valueField: "{{slug}}",
+            searchFields: ["title"],
+            displayFields: ["title"],
+          }
       - {
           label: "Meta description",
           name: "metaDescription",
