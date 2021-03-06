@@ -213,9 +213,6 @@ collections:
             name: hero
             widget: object
             fields:
-              - {
-                  - !include componentDecorator.yml
-                }
               - { label: "Heading", name: heading, widget: string }
               - {
                   label: "Content",
@@ -228,9 +225,7 @@ collections:
             name: textBlock
             widget: object
             fields:
-              - {
                 - !include componentDecorator.yml
-              }
               - {
                   label: "Heading",
                   name: heading,
