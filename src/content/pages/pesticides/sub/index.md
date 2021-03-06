@@ -8,5 +8,6 @@ eleventyNavigation:
   slug:
     ? "{ fields.slug }"
   key: Sub page
+  url: pesticdes/index
 metaDescription: dsafasdfasdfasdfasdfasdf
 ---
