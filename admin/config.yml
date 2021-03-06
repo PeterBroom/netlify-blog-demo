@@ -225,7 +225,10 @@ collections:
             name: textBlock
             widget: object
             fields:
-              - { !include componentDecorator.yml }
+              - {
+                  label: "Decorator",
+                  name: decorator,
+                  !include componentDecorator.yml }
               - {
                   label: "Heading",
                   name: heading,
