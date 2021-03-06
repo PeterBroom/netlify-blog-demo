@@ -216,7 +216,7 @@ collections:
             name: hero
             widget: object
             fields:
-              - ComponentDecorator
+              - { ComponentDecorator }
               - { label: "Heading", name: heading, widget: string }
               - {
                   label: "Content",
