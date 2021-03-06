@@ -242,8 +242,8 @@ collections:
           - { label: "Order", name: "order", widget: "number", default: 0 }
           - {
             label: "Parent key",
-            widget: relation,
             name: parentKey,
+            widget: relation,
             required: true,
             multiple: false,
             collection: pages,
