@@ -251,7 +251,7 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-          - { label: "Slug", name: "slug", widget: "hidden", default: {{meta.path}} }
+          - { label: "Slug", name: "slug", widget: "string", default: {{meta.path}} }
       - {
           label: "Meta description",
           name: "metaDescription",
