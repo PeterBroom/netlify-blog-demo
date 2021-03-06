@@ -138,30 +138,30 @@ collections:
       #                             searchFields: ["title"],
       #                             displayFields: ["title"],
       #                           }
-  - name: sections
-    label: Sections
-    label_singular: "Section"
-    title: Sections
-    folder: src/content/sections
-    create: true
-    identifier_field: name
-    summary: '{{fields.sectionName}}'
-    editor:
-      preview: false
-    fields:
-      - {
-          label: "Name",
-          name: "sectionName",
-          widget: "string",
-          required: true,
-        }
-      - {
-          label: "Slug",
-          name: "sectionSlug",
-          widget: "string",
-          default: {{fields.sectionName}},
-          required: true,
-        }
+  # - name: sections
+  #   label: Sections
+  #   label_singular: "Section"
+  #   title: Sections
+  #   folder: src/content/sections
+  #   create: true
+  #   identifier_field: name
+  #   summary: '{{fields.sectionName}}'
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - {
+  #         label: "Name",
+  #         name: "sectionName",
+  #         widget: "string",
+  #         required: true,
+  #       }
+  #     - {
+  #         label: "Slug",
+  #         name: "sectionSlug",
+  #         widget: "string",
+  #         default: {{fields.sectionName}},
+  #         required: true,
+  #       }
 
   - name: pages
     label: Pages
