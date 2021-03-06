@@ -228,8 +228,8 @@ collections:
               - {
                   label: "Decorator",
                   name: decorator,
-                  widget: object
-                  !include ./admin/componentDecorator.yml }
+                  widget: object,
+                  files: !include ./admin/componentDecorator.yml }
               - {
                   label: "Heading",
                   name: heading,
