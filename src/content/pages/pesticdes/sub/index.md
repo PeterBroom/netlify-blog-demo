@@ -7,5 +7,6 @@ eleventyNavigation:
   url: pesticdes/index
   key: Sub page
   order: 0
+  parentKey: pesticdes/index
 metaDescription: dsafasdfasdfasdfasdfasdf
 ---
