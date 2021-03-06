@@ -1,5 +1,13 @@
 {
   label: "Class names",
   name: classNames,
-  widget: string
+  widget: object,
+  fields: {
+    - {
+      label: "Test",
+      name: test,
+      widget: string,
+      required: false,
+    }
+  }
 }
