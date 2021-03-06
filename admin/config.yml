@@ -1,3 +1,6 @@
+includes:
+  - componentDecorator.yml
+
 backend:
   name: git-gateway
   branch: main
@@ -213,6 +216,7 @@ collections:
             name: hero
             widget: object
             fields:
+              - ComponentDecorator
               - { label: "Heading", name: heading, widget: string }
               - {
                   label: "Content",
@@ -225,7 +229,6 @@ collections:
             name: textBlock
             widget: object
             fields:
-              files: !include ./admin/componentDecorator.yml
               - {
                   label: "Heading",
                   name: heading,
