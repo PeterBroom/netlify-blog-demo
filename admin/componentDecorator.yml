@@ -1,3 +1,7 @@
-label: "Class names",
-name: classNames,
-widget: string,
+widget: object
+fields:
+  - {
+    label: "Class names",
+    name: classNames,
+    widget: string
+  }
