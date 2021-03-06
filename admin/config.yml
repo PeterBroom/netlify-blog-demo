@@ -191,17 +191,17 @@ collections:
           default: "main/sub/index.html",
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
-      - {
-          label: "Section",
-          name: Section,
-          widget: relation,
-          collection: sections,
-          required: false,
-          multiple: false,
-          valueField: "{{sectionName}}",
-          searchFields: ["sectionName"],
-          displayFields: ["sectionName"],
-        }
+      # - {
+      #     label: "Section",
+      #     name: Section,
+      #     widget: relation,
+      #     collection: sections,
+      #     required: false,
+      #     multiple: false,
+      #     valueField: "{{sectionName}}",
+      #     searchFields: ["sectionName"],
+      #     displayFields: ["sectionName"],
+      #   }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Content Blocks"
