@@ -228,7 +228,7 @@ collections:
               - {
                   label: "Decorator",
                   name: decorator,
-                  !include componentDecorator.yml }
+                  !include ./admin/componentDecorator.yml }
               - {
                   label: "Heading",
                   name: heading,
