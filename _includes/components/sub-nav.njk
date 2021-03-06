@@ -10,6 +10,7 @@
     <ul>
         {% for page in levelOne %}
             <li>
+                {{ page | dump}}
                 <a href="{{ page.url | url }}">
                     {{ page.title }}
                 </a>
