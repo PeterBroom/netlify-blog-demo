@@ -191,6 +191,17 @@ collections:
           default: "main/sub/index.html",
           hint: "Must be relative path (e.g. main/sub/index.html). Don't forget the .html extension",
         }
+      - {
+          label: "Parent key",
+          name: parentKey,
+          widget: relation,
+          required: true,
+          multiple: false,
+          collection: pages,
+          valueField: "{{slug}}",
+          searchFields: ["title"],
+          displayFields: ["title"],
+        }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Content Blocks"
@@ -202,6 +213,9 @@ collections:
             name: hero
             widget: object
             fields:
+              - {
+                  - !include include.d/componentDecorator.yml
+                }
               - { label: "Heading", name: heading, widget: string }
               - {
                   label: "Content",
@@ -214,6 +228,9 @@ collections:
             name: textBlock
             widget: object
             fields:
+              - {
+                - !include include.d/componentDecorator.yml
+              }
               - {
                   label: "Heading",
                   name: heading,
@@ -240,17 +257,6 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-          - {
-            label: "Parent key",
-            name: parentKey,
-            widget: relation,
-            required: true,
-            multiple: false,
-            collection: pages,
-            valueField: "{{slug}}",
-            searchFields: ["title"],
-            displayFields: ["title"],
-          }
       - {
           label: "Meta description",
           name: "metaDescription",

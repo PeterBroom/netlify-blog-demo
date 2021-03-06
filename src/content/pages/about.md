@@ -1,6 +1,6 @@
 ---
 Section: Biocides
-parent: Home
+parentKey: Home
 permalink: /about/index.html
 relatedContent:
   - biocides/pic/index
@@ -15,7 +15,6 @@ url:
 eleventyNavigation:
   key: About
   order: 1
-  parent: ""
 metaDescription: This is a description of the about page
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
