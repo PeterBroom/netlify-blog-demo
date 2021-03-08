@@ -256,12 +256,8 @@ collections:
       - label: "Exclude from navigation"
         name: eleventyExcludeFromCollections
         required: false
-        multiple: false
-        widget: "select"
-        options:
-          - { label: "Yes", value: true }
-          - { label: "No", value: false }
-        default: ["Yes"]
+        widget: "boolean"
+        default: false
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
         widget: "object"
