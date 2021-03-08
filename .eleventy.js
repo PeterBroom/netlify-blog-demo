@@ -11,6 +11,8 @@ const md = require('markdown-it')({
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+    eleventyConfig.addLayoutAlias('default', 'layouts/base.njk')
+
     // Global collection
     eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents))
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
@@ -43,4 +45,18 @@ module.exports = function (eleventyConfig) {
         return [...collection.getFilteredByGlob("./src/content/pages/**/*.md")];
     });
 
+    return {
+        templateFormats:        ['md', 'njk'],
+        markdownTemplateEngine: 'njk',
+        htmlTemplateEngine:     'njk',
+        passtroughFileCopy:     true,
+
+        dir: {
+            input:    'src',
+            output:   '_site',
+            includes: '_includes',
+            layouts:  '_includes/layouts',
+            data:     'global'
+        }
+    }
 };

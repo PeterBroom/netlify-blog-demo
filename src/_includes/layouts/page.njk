@@ -1,15 +1,15 @@
 ---
-layout: layouts/base.njk
 section: page
 parent: {{ parent }}
-eleventyComputed:
-  eleventyNavigation:
-    key: "{{ title }}"
-    parent: "{{ parent }}"
+#eleventyComputed:
+#  eleventyNavigation:
+#    key: "{{ title }}"
+#    parent: "{{ parent }}"
 ---
 <h1>{{ title }}</h1>
 
 {% include "layouts/blocks.njk" %}
+{% include "components/sub-nav.njk" %}
 
 <h2>Related content</h2>
 <ul>

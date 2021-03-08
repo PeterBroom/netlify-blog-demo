@@ -8,13 +8,13 @@ relatedContent:
   - pesticides/index
 title: About us
 date: 2017-01-01T00:00:00.000Z
-url:
-  - biocides/momomomo/index
-  - keywords/index
-  - biocides/pic/index
 eleventyNavigation:
   key: About
   order: 1
+  children:
+    - biocides/momomomo/index
+    - keywords/index
+    - biocides/pic/index
 metaDescription: This is a description of the about page
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

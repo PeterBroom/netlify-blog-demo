@@ -1,0 +1,37 @@
+<h2>Sub nav</h2>
+{% if eleventyNavigation.parent == page.fileSlug | capitalize %}
+    {% set find = page.fileSlug | capitalize %}
+{% else %}
+    {% set find = parentKey %}
+{% endif %}
+{% set pageTitle = page.fileSlug | capitalize %}
+
+{% set levelOne = collections.pages | eleventyNavigation %}
+<pre>
+<code>
+{{ levelOne | dump(2)}}
+</code>
+</pre>
+<nav>
+    <ul>
+        {% for page in levelOne %}
+            <li>
+                <a href="{{ page.url | url }}">
+                    {{ page.title }}
+                </a>
+                {% set levelTwo = page.children %}
+                {% if levelTwo %}
+                    <ul>
+                        {% for page in levelTwo %}
+                            <li>
+                                <a href="{{ page.url | url }}">
+                                    {{ page.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

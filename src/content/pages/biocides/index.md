@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: page.njk
 permalink: /biocides/index.html
 title: "Biocides "
 parentKey: Home
