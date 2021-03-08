@@ -7,7 +7,7 @@ eleventyComputed:
     key: "{{ title }}"
 parentKey: Pesticides
 title: Sub page
-eleventyExcludeFromCollections: "false"
+eleventyExcludeFromCollections: false
 eleventyNavigation:
   key: Pesticides
   order: 0
