@@ -209,10 +209,10 @@ collections:
           name: eleventyExcludeFromCollections,
           required: false,
           widget: "select",
-          default: ["Yes"],
           options:
             - { label: "Yes", value: "true" }
-            - { label: "No", value: "false" }
+            - { label: "No", value: "false" },
+          default: ["Yes"],
       }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
