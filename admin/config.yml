@@ -211,8 +211,8 @@ collections:
           widget: "select",
           default: ["Yes"],
           options:
-            - { label: "Yes", value: true }
-            - { label: "No", value: false }
+            - { label: "Yes", value: "true" }
+            - { label: "No", value: "false" }
       }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
