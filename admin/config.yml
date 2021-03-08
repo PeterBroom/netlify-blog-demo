@@ -204,16 +204,6 @@ collections:
           searchFields: ["title"],
           displayFields: ["title"],
         }
-      - {
-          label: "Exclude from navigation",
-          name: eleventyExcludeFromCollections,
-          required: false,
-          widget: "select",
-          options:
-            - { label: "Yes", value: "true" }
-            - { label: "No", value: "false" },
-          default: ["Yes"],
-      }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Content Blocks"
@@ -263,6 +253,15 @@ collections:
           searchFields: ["title"],
           displayFields: ["title"],
         }
+      - label: "Exclude from navigation"
+        name: eleventyExcludeFromCollections
+        required: false
+        multiple: false
+        widget: "select"
+        options:
+          - { label: "Yes", value: "true" }
+          - { label: "No", value: "false" }
+        default: ["Yes"]
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
         widget: "object"
