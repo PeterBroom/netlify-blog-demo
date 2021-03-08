@@ -259,8 +259,8 @@ collections:
         multiple: false
         widget: "select"
         options:
-          - { label: "Yes", value: "true" }
-          - { label: "No", value: "false" }
+          - { label: "Yes", value: true }
+          - { label: "No", value: false }
         default: ["Yes"]
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
